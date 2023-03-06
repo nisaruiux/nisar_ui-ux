@@ -1,0 +1,631 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <style>
+        
+
+       
+
+        svg #heart {
+            transform-origin: center;
+            animation: animateHeartOut .3s linear forwards;
+        }
+
+        svg #main-circ {
+            transform-origin: 29.5px 29.5px;
+        }
+
+        .checkbox {
+            display: none;
+        }
+
+        .checkbox:checked+label svg #heart {
+            transform: scale(0.2);
+            fill: #E2264D;
+            animation: animateHeart .3s linear forwards .25s;
+        }
+
+        .checkbox:checked+label svg #main-circ {
+            transition: all 2s;
+            animation: animateCircle .3s linear forwards;
+            opacity: 1;
+        }
+
+        .checkbox:checked+label svg #heartgroup1 {
+            opacity: 1;
+            transition: .1s all .3s;
+        }
+
+        .checkbox:checked+label svg #heartgroup1 #heart1 {
+            transform: scale(0) translate(0, -30px);
+            transform-origin: 0 0 0;
+            transition: .5s transform .3s;
+        }
+
+        .checkbox:checked+label svg #heartgroup6 #heart1 {
+            transform: scale(0) translate(-30px, 0px);
+            transform-origin: 0 0 0;
+            transition: .5s transform .3s;
+        }
+
+        
+
+        .checkbox:checked+label svg #heartgroup7 #heart1 {
+            transform: scale(0) translate(-30px, -15px);
+            transform-origin: 0 0 0;
+            transition: .5s transform .3s;
+        }
+
+        
+
+        @keyframes animateCircle {
+            40% {
+                transform: scale(10);
+                opacity: 1;
+                fill: #DD4688;
+            }
+
+            55% {
+                transform: scale(11);
+                opacity: 1;
+                fill: #D46ABF;
+            }
+
+            65% {
+                transform: scale(12);
+                opacity: 1;
+                fill: #CC8EF5;
+            }
+
+            75% {
+                transform: scale(13);
+                opacity: 1;
+                fill: transparent;
+                stroke: #CC8EF5;
+                stroke-width: .5;
+            }
+
+            85% {
+                transform: scale(17);
+                opacity: 1;
+                fill: transparent;
+                stroke: #CC8EF5;
+                stroke-width: .2;
+            }
+
+            95% {
+                transform: scale(18);
+                opacity: 1;
+                fill: transparent;
+                stroke: #CC8EF5;
+                stroke-width: .1;
+            }
+
+            100% {
+                transform: scale(19);
+                opacity: 1;
+                fill: transparent;
+                stroke: #CC8EF5;
+                stroke-width: 0;
+            }
+        }
+
+        @keyframes animateHeart {
+            0% {
+                transform: scale(0.2);
+            }
+
+            40% {
+                transform: scale(1.2);
+            }
+
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        @keyframes animateHeartOut {
+            0% {
+                transform: scale(1.4);
+            }
+
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        .nn {
+            border-radius: 30px;
+            border: 10px solid white;
+        }
+
+        #toggle span {
+            display: block;
+            height: 100%;
+        }
+
+        #toggle {
+            display: block;
+            overflow: hidden;
+            animation: spin_words 4s infinite;
+            margin-top: -65%;
+
+        }
+
+        @keyframes spin_words {
+            0% {
+                transform: translateY(-30%);
+
+            }
+
+            40% {
+                transform: translateY(7%);
+            }
+
+            60% {
+                transform: translateY(40%);
+            }
+
+            80% {
+                transform: translateY(75%);
+            }
+
+            100% {
+                transform: translateY(100%);
+            }
+
+
+        }
+
+        @media only screen and (min-width: 576px) {
+
+            #exp {
+                background-size: 5vw;
+                background-position: 10px 10px;
+            }
+
+            #resume {
+                display: none;
+            }
+
+            #skill {
+                background-position-x: -135%;
+            }
+
+            #project {
+                padding-top: 6.5rem;
+                background-image: linear-gradient(to bottom right, rgb(0, 208, 255), rgb(25, 0, 255));
+
+            }
+            #love {
+                display: none;
+            }
+            #icon1{
+                height: 24px;
+            }
+            #icon2{
+                height: 18px;width: 22px;
+            }
+            #icon3{
+                height: 18px;
+            }
+        }
+
+        @media only screen and (max-width: 576px) {
+            #love {
+                position: absolute;
+                left: 1px;
+            } 
+            #love svg {
+            cursor: pointer;
+            overflow: hidden;
+            margin: 0;
+            width: 15vw;
+
+        }
+
+            #exp {
+                background-size: 23vw;
+                background-position: 10px 10px;
+            }
+
+            #skill {
+                background-position-x: -730%;
+            }
+
+            #besides {
+                content: 'hello';
+            }
+
+            #headline {
+                text-align: center;
+                padding: 1rem;
+            }
+
+            #bg {
+                background-blend-mode: color-burn;
+                display: grid;
+            }
+
+            #Download {
+                display: none;
+            }
+
+            #resume {
+                text-align: center;
+                background-image: linear-gradient(to bottom right, rgb(0, 208, 255), rgb(25, 0, 255));
+                padding: 15px 10px;
+                border-radius: 20px;
+            }
+
+            #project {
+                text-align: center;
+                border-radius: 20px;
+                min-width: 100%;
+                border: 1px solid rgb(0, 208, 255);
+                margin-bottom: 2.5vw;
+            }
+
+            #parent_resume_project {
+                max-width: 100%;
+                padding-left: 2.5vw;
+                padding-right: 2.5vw;
+
+            }
+
+            #hello {
+                color: #7C65F4;
+            }
+
+            #besides {
+                border: 1px solid black;
+                border-radius: 20px;
+                padding: 12px 12px;
+                text-decoration: none;
+                position: absolute;
+                right: 3%;
+            }
+
+            #besides_para {
+                display: none;
+            }
+
+            #besides_arrow {
+                width: 15px;
+                height: 15px;
+
+            }
+
+            #switch {
+                display: none;
+            }
+
+            #contact {
+                background-size: 43vw;
+                background-position: 10px 40px;
+
+            }
+           
+        }
+
+        @media only screen and (max-width: 918px) {
+
+
+            #download {
+                display: none;
+            }
+
+
+        }
+
+        @media only screen and (min-width: 992px) {
+
+            #resume {
+                display: none;
+            }
+
+
+        }
+
+
+
+        @media only screen and (max-width: 823px) {
+
+
+            #bg {
+                background-position-y: bottom;
+            }
+
+        }
+    </style>
+
+</head>
+
+<body style="font-family: poppins;overflow-x: hidden;">
+
+    <div class="container-fluid" style="height: 100vh;">
+
+        <div class="row " id="parent" style="padding-left:2vw ;padding-right: 2vw;">
+            <div class="col-12" id="header"
+                style="height: 14vh;display: flex;align-items: center;position: sticky;top: 0;background-color: white;z-index: 2;">
+                <div class="row" style="height: 6vh;width: 100vw;">
+                    <div class="col-lg-6 col-6 " style="display: flex;align-items: center;">
+                        <span id="span_gif"
+                            style="display: inline-block;height: 6vh;width: 6vh;background-color: rgb(151, 151, 151);border-radius: 50%;background-image: url(profile.gif);background-repeat: no-repeat;background-position: center;background-size: cover;"></span>
+                        <img id="nisar" src="name.svg" alt="" style="margin-left: 10px;">
+                    </div>
+                    <div class="col-lg-6 col-6 " style="display: flex;align-items: center;justify-content: end;">
+                        <div id="resume_down" style="display: flex;align-items: center;">
+                            <p id="download" style="font-size: 16px;font-weight: 500;margin: 0;">Download my resume</p>
+                            <img id="Download" src="download.svg" alt="" style="height: 18px;margin-left: 19px;">
+                        </div>
+                        <div id="iconset" style="display: flex;align-items: center;margin-left: 80px;">
+                            <img id="icon1" src="ri_behance-line.svg" alt="" >
+                            <!-- style="height: 24px;" -->
+                            <img id="icon2" src="dribble 1.svg" alt="" style=" margin-left: 25px;">
+                            <!-- height: 18px;width: 22px; -->
+                            <img id="icon3" src="insta.svg" alt="" style="margin-left: 25px;">
+                            <!-- height: 18px; -->
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="row">
+                    <div class="col-lg-7 col-12">
+                        <div class="row">
+                            <div class="col-lg-12 col-12 nn" id="bg"
+                                style=" overflow: hidden; min-height: 60vh; padding: 3vw; background-color: rgb(0, 0, 0);background-image: url(Component\ 1.svg);background-repeat: no-repeat;background-size: contain;background-position-x:60%;background-position-y: bottom;">
+                                <h1 id="headline"
+                                    style=" font-size: 45px; color: rgb(255, 255, 255);  line-height: 1.4em;font-weight: 500;">
+                                    Hi! I
+
+                                    <div style="display: inline-block;overflow: hidden;">
+                                        <div id="toggle">
+                                            <span style="color: yellow;">Research</span>
+                                            <span style="color: rgb(0, 255, 179);">Design</span>
+                                            <span style="color: rgb(179, 255, 0);">Artifies</span>
+                                        </div>
+                                    </div>
+                                    <br> brands & products.<br>as you wish
+                                </h1>
+
+                                <div id="parent_resume_project">
+                                    <div id="resume"
+                                        style="margin-top: 5rem;padding: 15px 25px;background-color: #7C65F4;">
+                                        <p style="color: white;font-size: 16px;font-weight: 500;margin: 0;">Download my
+                                            resume</p>
+                                    </div>
+
+
+                                    <div id="project"
+                                        style=" width:fit-content;margin-top: 5.3vw; padding: 15px 25px;
+                                         border-radius: 20px;display: flex;align-items: center;justify-content: center;">
+                                        <p style="color: white;font-size: 16px;font-weight: 500;margin: 0;">View my
+                                            projects</p>
+                                        <svg id="besides_arrow" xmlns="http://www.w3.org/2000/svg" width="10"
+                                            height="10" fill="white" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                                            <path
+                                                d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
+                                        </svg>
+                                    </div>
+                                </div>
+
+
+
+                            </div>
+                            <div class="col-lg-12 col-12">
+                                <div class="row">
+                                    <div class="col-lg-6 col-12 nn" id="exp"
+                                        style="height: 20vh; background-color: #dcb730;display: flex;justify-content: center;align-items: center;position: relative;background-image: url(3.svg);background-repeat: no-repeat;">
+                                        <p style=" font-size: 36px;font-weight: 500; color: rgb(255, 255, 255);">3yr
+                                            Exp.</p>
+                                        <div style="position: absolute;bottom: 5%;right: 5%;">
+                                            <li style="font-size: 12px;font-weight: 500;">2019-present</li>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-12 nn" id="skill"
+                                        style="height: 20vh; background-color: #61E54C;display: flex;justify-content: center;align-items: center;position: relative;background-image: url(figma_mask.svg);background-repeat: no-repeat;background-size: contain;">
+                                        <p style=" font-size: 36px;font-weight: 500; color: rgb(255, 255, 255);">Skills
+                                        </p>
+                                        <div style="position: absolute;bottom: 5%;right: 5%;">
+                                            <img src="sketch.svg" alt="">
+                                            <img src="xd.svg" alt="">
+                                            <img src="indesign.svg" alt="">
+                                            <img src="illustrator.svg" alt="">
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="col-lg-5 col-12 ">
+                        <div class="row">
+                            <div class="col-lg-12 col-12 nn" id="work"
+                                style="background-color: rgb(21, 92, 200); height: 50vh;display: flex;justify-content: center;align-items: center;position: relative;">
+                                <p id="wonder"
+                                    style=" font-size: 36px;font-weight: 500; color: rgb(255, 255, 255);text-align: center;">
+                                    Here it gets <br>intresting !!!</p>
+                                <div style="position: absolute;bottom: 2%;right: 5%;display: flex;">
+                                    <li style="font-size: 12px;font-weight: 500;">UX/UI case studies</li>
+                                    <li style="font-size: 12px;font-weight: 500;margin-left: 10px;">More than 100
+                                        projects</li>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-12 nn" id="contact"
+                                style="background-color: #7C65F4;height: 30vh;display: flex;justify-content: center;align-items: center;position: relative;background-image: url(hand.svg);background-repeat: no-repeat;">
+                                <p
+                                    style=" font-size: 36px;font-weight: 500; color: rgb(255, 255, 255);text-align: center;">
+                                    Get in touch</p>
+                                <div style="position: absolute;bottom: 3%;right: 5%;display: flex;">
+                                    <li style="font-size: 12px;font-weight: 500;">+91 9895 410 700</li>
+                                    <li style="font-size: 12px;font-weight: 500;margin-left: 10px;">muhammednisarpktr
+                                    </li>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-12"
+                style="height: 6vh; display: flex;align-items: center;justify-content: space-between;position: relative;">
+                <div class="form-check form-switch" id="switch">
+                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                </div>
+                <div id="alert">
+
+                </div>
+                <div id="love" >
+                        <input type="checkbox" class="checkbox" id="checkbox" />
+                        <label for="checkbox">
+                            <svg id="heart-svg" viewBox="467 392 58 57" xmlns="http://www.w3.org/2000/svg">
+                                <g id="Group" fill="none" fill-rule="evenodd" transform="translate(467 392)">
+                                    <path
+                                        d="M29.144 20.773c-.063-.13-4.227-8.67-11.44-2.59C7.63 28.795 28.94 43.256 29.143 43.394c.204-.138 21.513-14.6 11.44-25.213-7.214-6.08-11.377 2.46-11.44 2.59z"
+                                        id="heart" fill="#AAB8C2" />
+                                    <circle id="main-circ" fill="#E2264D" opacity="0" cx="29.5" cy="29.5" r="1.5" />
+
+                                    <g id="heartgroup7" opacity="0" transform="translate(7 6)">
+                                        <circle id="heart1" fill="#9CD8C3" cx="2" cy="6" r="2" />
+                                        <circle id="heart2" fill="#8CE8C3" cx="5" cy="2" r="2" />
+                                    </g>
+
+                                    <g id="heartgroup6" opacity="0" transform="translate(0 28)">
+                                        <circle id="heart1" fill="#CC8EF5" cx="2" cy="7" r="2" />
+                                        <circle id="heart2" fill="#91D2FA" cx="3" cy="2" r="2" />
+                                    </g>
+
+                                    <g id="heartgroup3" opacity="0" transform="translate(52 28)">
+                                        <circle id="heart2" fill="#9CD8C3" cx="2" cy="7" r="2" />
+                                        <circle id="heart1" fill="#8CE8C3" cx="4" cy="2" r="2" />
+                                    </g>
+                                </g>
+                            </svg>
+                        </label>
+                </div>
+                <div id="besides" style="display: flex; align-items: center;">
+                    <p id="besides_para"
+                        style="font-weight: 500; font-size: 14px;padding: 0;margin: 0;text-decoration: underline;">
+                        Besides</p>
+                    <svg id="besides_arrow" xmlns="http://www.w3.org/2000/svg" width="10" height="10"
+                        fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                        <path
+                            d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
+                    </svg>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
+        </script>
+
+    <script>
+        var x = document.getElementById('bg');
+        var y = document.getElementById('exp');
+        var z = document.getElementById('skill');
+        var a = document.getElementById('work');
+        var b = document.getElementById('contact');
+        var c = document.getElementById('span_gif');
+        var d = document.getElementById('nisar');
+        var e = document.getElementById('resume_down');
+        var f = document.getElementById('iconset');
+        var g = document.getElementById('wonder');
+        var h = document.getElementById('alert');
+
+        var button = document.getElementById('flexSwitchCheckDefault');
+
+        count = 0;
+        button.onclick = function () {
+
+            count += 1;
+            if (count % 2 == 0) {
+                window.location.reload();
+            } else {
+                // black_light
+                x.style.backgroundColor = '#2f2d2d';
+                x.style.transform = 'rotate(-2deg)';
+                x.style.border = '0px'
+                x.style.zIndex = '3'
+                x.style.transition = " all 1s"
+
+                // green
+                y.style.backgroundColor = '#ff3333'
+                y.style.transform = 'rotate(1deg)'
+                y.style.transition = " all 1s"
+
+                // black
+                a.style.backgroundColor = '#7676a7'
+                a.style.transform = 'rotate(4deg)';
+                a.style.border = '0px'
+                a.style.zIndex = '3'
+                a.style.transition = " all 1s"
+
+                // yellow
+                z.style.backgroundColor = '#eaeaea'
+                z.style.border = '0px'
+                z.style.transform = 'rotate(-4.3deg)'
+                z.style.zIndex = '3'
+                z.style.transition = " all 1s"
+
+                // z.style.transform='rotate(-6deg)'
+                //contact violet
+                b.style.backgroundColor = '#AB8D9C'
+                b.style.transform = 'rotate(5deg)'
+                b.style.transition = " all 1s"
+                //span
+                c.style.marginTop = '4.3rem'
+                c.style.transform = "translateX(-50px)";
+                c.style.transition = " all 1s"
+                //nisar
+                d.style.transform = 'translateY(16px)'
+                //resume
+                e.style.transform = 'translateY(55px)'
+                e.style.marginTop = '29px'
+                e.style.transform = 'rotate(3deg)'
+                //iconset
+                f.style.transform = 'translate(55px)'
+                f.style.marginTop = '58px'
+                f.style.marginInline = '-42px'
+                f.style.marginLeft = '42px'
+                f.style.transform = 'rotate(8deg)'
+                //wonder
+                g.style.textAlign = 'right'
+                g.style.transition = " all 3s"
+                //alert_box
+                h.innerHTML = "<img src='alert.svg' style='color:red;'>" + 'You broke it ??? looks like bad UI/UX'
+                h.style.color = 'red'
+
+
+
+
+            }
+        };
+
+
+    </script>
+
+</body>
+
+</html>
