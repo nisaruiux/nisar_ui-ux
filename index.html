@@ -12,6 +12,14 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
     <style>
+
+        /* hover */
+
+        
+
+
+
+
         svg #heart {
             transform-origin: center;
             animation: animateHeartOut .3s linear forwards;
@@ -205,11 +213,15 @@
             }
 
             #project {
-                padding-top: 6.5rem;
                 background-image: linear-gradient(to bottom right, rgb(0, 208, 255), rgb(25, 0, 255));
+                color: white;
+                border: none;
+                margin-top: 6vw;
 
             }
-
+            #form{
+                display: none;
+            }
             #love {
                 display: none;
             }
@@ -303,6 +315,7 @@
             #bg {
                 background-blend-mode: color-burn;
                 display: grid;
+                
             }
 
             #Download {
@@ -313,14 +326,30 @@
                 text-align: center;
                 background-image: linear-gradient(to bottom right, rgb(0, 208, 255), rgb(25, 0, 255));
                 border-radius: 20px;
+                min-width: 100%;
+                
             }
+            /* #resume:hover{
+                background-image: linear-gradient(to bottom right, rgb(0, 0, 0), rgb(0, 0, 0));
+                transition: all 0.5s;
+
+                
+            } */
 
             #project {
                 text-align: center;
                 border-radius: 20px;
                 min-width: 100%;
+                margin-top: 4vw;
                 border: 2px solid rgb(0, 208, 255);
                 margin-bottom: 12.5vw;
+                color: white;
+            }
+            #project:hover{
+                background-color: white;
+                color: black;
+                border: 2px solid white;
+                transition: all 0.5s;
             }
             #header{
                 height: 10vh;
@@ -461,17 +490,20 @@
                                 </h1>
 
                                 <div id="parent_resume_project">
-                                    <div id="resume"
-                                        style="margin-top: 5rem;padding: 15px 25px;background-color: #7C65F4;">
+                                   
+                                    <form action="file.doc" method="get" id="form"> 
+                                        <button type="submit" style="background-color: transparent;width:100%; margin-top: 5.2rem;border: none;">
+                                    <div   id="resume" 
+                                        style="padding: 15px 25px;background-color: #7C65F4;">
                                         <p style="color: white;font-size: 16px;font-weight: 500;margin: 0;">Download my
                                             resume</p>
-                                    </div>
+                                    </div></button>
+                                </form>
 
-
-                                    <div id="project"
-                                        style=" width:fit-content;margin-top: 5.3vw; padding: 15px 25px;
+                                    <div id="project" class="btn" role="button" aria-pressed="false" tabindex="0" 
+                                        style=" width:fit-content; padding: 15px 25px;
                                          border-radius: 20px;display: flex;align-items: center;justify-content: center;">
-                                        <p style="color: white;font-size: 16px;font-weight: 500;margin: 0;">View my
+                                        <p style="font-size: 16px;font-weight: 500;margin: 0;">View my
                                             projects</p>
                                         <svg id="besides_arrow" xmlns="http://www.w3.org/2000/svg" width="10"
                                             height="10" fill="white" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
