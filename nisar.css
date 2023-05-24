@@ -1,3 +1,17 @@
+
+
+:root{
+  --main:#D39CFF;
+  --text: rgb(109, 109, 109);
+}
+
+
+
+
+
+
+
+
 #preloader{
   background: #ffffff url(Circles-menu-3.gif) no-repeat center center;
   background-size: 8vh;
@@ -6,135 +20,6 @@
   position: fixed;
   z-index: 100;
 }
-
-/* 
-.love svg {
-  cursor: pointer;
-  overflow: hidden;
-  margin: 0;
-  width: 50px;
-
-}
-svg .heart {
-transform-origin: center;
-animation: animateHeartOut .3s linear forwards;
-}
-
-svg .main-circ {
-transform-origin: 29.5px 29.5px;
-}
-
-.checkbox {
-display: none;
-}
-
-.checkbox:checked+label svg .heart {
-transform: scale(0.2);
-fill: #E2264D;
-animation: animateHeart .3s linear forwards .25s;
-}
-
-.checkbox:checked+label svg .main-circ {
-transition: all 2s;
-animation: animateCircle .3s linear forwards;
-opacity: 1;
-}
-
-
-
-
-
-.checkbox:checked+label svg .heartgroup6 .heart1 {
-transform: scale(0) translate(-30px, 0px);
-transform-origin: 0 0 0;
-transition: .5s transform .3s;
-}
-
-
-
-.checkbox:checked+label svg .heartgroup7 .heart1 {
-transform: scale(0) translate(-30px, -15px);
-transform-origin: 0 0 0;
-transition: .5s transform .3s;
-}
-
-
-
-@keyframes animateCircle {
-40% {
-    transform: scale(10);
-    opacity: 1;
-    fill: #DD4688;
-}
-
-55% {
-    transform: scale(11);
-    opacity: 1;
-    fill: #D46ABF;
-}
-
-65% {
-    transform: scale(12);
-    opacity: 1;
-    fill: #CC8EF5;
-}
-
-75% {
-    transform: scale(13);
-    opacity: 1;
-    fill: transparent;
-    stroke: #CC8EF5;
-    stroke-width: .5;
-}
-
-85% {
-    transform: scale(17);
-    opacity: 1;
-    fill: transparent;
-    stroke: #CC8EF5;
-    stroke-width: .2;
-}
-
-95% {
-    transform: scale(18);
-    opacity: 1;
-    fill: transparent;
-    stroke: #CC8EF5;
-    stroke-width: .1;
-}
-
-100% {
-    transform: scale(19);
-    opacity: 1;
-    fill: transparent;
-    stroke: #CC8EF5;
-    stroke-width: 0;
-}
-}
-
-@keyframes animateHeart {
-0% {
-    transform: scale(0.2);
-}
-
-40% {
-    transform: scale(1.2);
-}
-
-100% {
-    transform: scale(1);
-}
-}
-
-@keyframes animateHeartOut {
-0% {
-    transform: scale(1.4);
-}
-
-100% {
-    transform: scale(1);
-}
-} */
 
 
 
@@ -176,7 +61,7 @@ transition: .5s transform .3s;
     font-size: 16px;
     font-weight: 400;
     border-radius: 5px;
-    background-color: #8F00FF;
+    background-color: var(--main);
     border: none;
 
 
@@ -187,7 +72,7 @@ transition: .5s transform .3s;
     transition: .2s;
   }
   #view{
-    background-color: #8F00FF;
+    background-color: var(--main);
   }
   #view:hover{
     background-color: #5b00a1;
@@ -201,7 +86,7 @@ transition: .5s transform .3s;
     margin-left: 20px;
     border-radius: 5px;
     background-color: transparent;
-    border: 1px solid #8F00FF;
+    border: 1px solid var(--main);
   }
   #btn_project:hover{
     background-color: #5b00a0;
@@ -232,7 +117,7 @@ transition: .5s transform .3s;
     display: flex;
   }
   #svg_icon svg:hover{
-    fill: #8F00FF;
+    fill:var(--main);
     transition: .2s;
   }
 
@@ -465,7 +350,7 @@ transition: .5s transform .3s;
 
 
   #btn_resume {
-    background-color: #8F00FF;
+    background-color: var(--main);
     border: none;
     margin-top: 10vw;
     font-size: 15px;
@@ -478,7 +363,7 @@ transition: .5s transform .3s;
 
   #btn_project {
     background-color: transparent;
-    border: 1px solid #8F00FF;
+    border: 1px solid var(--main);
     font-size: 16px;
     margin-top: 1em;
     width: 70%;
@@ -492,7 +377,7 @@ transition: .5s transform .3s;
     transition: .2s;
   }
   #view{
-    background-color: #8F00FF;
+    background-color: var(--main);
   }
   #view:hover{
     background-color: #5b00a1;
@@ -605,7 +490,7 @@ transition: .5s transform .3s;
 }
 
 .timeline .timeline-item:after {
-  background-color: #8F00FF;
+  background-color: var(--main);
   left: -36px;
   border-radius: 50%;
   height: 8px;
@@ -622,7 +507,7 @@ transition: .5s transform .3s;
 }
 
 .fondo {
-  background: #8F00FF;
+  background: var(--main);
   border-radius: 50%;
   box-shadow: 0 1px 2.2px rgba(0, 0, 0, 0.051),
     0 2.3px 5.3px rgba(0, 0, 0, 0.059), 0 4.4px 10px rgba(0, 0, 0, 0.06),
