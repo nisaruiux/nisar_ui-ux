@@ -58,7 +58,7 @@
   #btn_resume {
     margin-top: 5vw;
     padding: 14px 50px;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 400;
     border-radius: 5px;
     background-color: var(--main);
@@ -81,7 +81,7 @@
 
   #btn_project {
     padding: 14px 40px;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 400;
     margin-left: 20px;
     border-radius: 5px;
@@ -353,7 +353,7 @@
     background-color: var(--main);
     border: none;
     margin-top: 10vw;
-    font-size: 15px;
+    font-size: 17px;
     width: 90%;
     padding: 10px 20px;
     border-radius: 5px;
@@ -364,7 +364,7 @@
   #btn_project {
     background-color: transparent;
     border: 1px solid var(--main);
-    font-size: 16px;
+    font-size: 17px;
     margin-top: 1em;
     width: 70%;
     padding: 10px 20px;
