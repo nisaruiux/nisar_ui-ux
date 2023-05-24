@@ -279,11 +279,11 @@
 
   #headline {
     /* font-size: 59px; */
-    font-size:  36px;
+    font-size:  38px;
     color: white;
     font-weight: 500;
     text-align: center;
-    line-height: 138%;
+    line-height: 134%;
   }
 
   #header_fixed {
@@ -322,10 +322,9 @@
     color: white;
     text-align: center;
     font-size: 15px;
-    font-weight: 400;
+    font-weight: 300;
     color: #7D7D7D;
     padding: 0 1rem;
-    line-height: 1.5rem;
   }
   #hidden{
     display: none;
@@ -352,7 +351,8 @@
   #btn_resume {
     background-color: var(--main);
     border: none;
-    margin-top: 10vw;
+    margin-top: 6vw;
+    font-weight: 300;
     font-size: 17px;
     width: 90%;
     padding: 10px 20px;
@@ -367,6 +367,7 @@
     font-size: 17px;
     margin-top: 1em;
     width: 70%;
+    font-weight: 300;
     padding: 10px 20px;
     border-radius: 5px;
 
