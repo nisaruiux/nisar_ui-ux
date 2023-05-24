@@ -73,6 +73,8 @@
   }
   #view{
     background-color: var(--main);
+    padding: 14px 5vw;
+    
   }
   #view:hover{
     background-color: #5b00a1;
@@ -188,7 +190,10 @@
   .card{
     width: 350px;
   }
-  
+  #common_para{
+    font-size: 16px;
+    font-weight: 400;
+  }
 
 }
 
@@ -221,7 +226,7 @@
   }
 
   #project_container{
-    margin-top: 2rem;
+    margin-top: 0rem;
   }
 
 
@@ -237,7 +242,6 @@
   }
 
   #tools{
-    margin-top: 10px;
     font-size: 16px;
   }
 
@@ -246,10 +250,7 @@
     width: 60px;
   }
 
-  #skilldiv p{
-    font-size: 16px;font-weight: 400;
-
-  }
+  
   #skilldiv{
     line-height: 0;
   }
@@ -283,7 +284,7 @@
     color: white;
     font-weight: 500;
     text-align: center;
-    line-height:45px ;
+    line-height:40px ;
   }
 
   #header_fixed {
@@ -299,7 +300,7 @@
   }
 
   ul li {
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
   }
 
   #list_nav {
@@ -327,6 +328,11 @@
     color: #7D7D7D;
     padding: 0 1rem;
   }
+  #common_para{
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 300;
+  }
   #hidden{
     display: none;
   }
@@ -353,7 +359,6 @@
     background-color: var(--main);
     border: none;
     margin-top: 4vw;
-    font-weight: 300;
     font-size: 17px;
     width: 90%;
     padding: 10px 20px;
@@ -368,7 +373,7 @@
     font-size: 17px;
     margin-top: 1em;
     width: 70%;
-    font-weight: 300;
+    font-weight: 400;
     padding: 10px 20px;
     border-radius: 5px;
 
@@ -380,6 +385,7 @@
   }
   #view{
     background-color: var(--main);
+    padding: 14px 20vw;
   }
   #view:hover{
     background-color: #5b00a1;
