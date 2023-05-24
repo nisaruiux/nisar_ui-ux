@@ -1,0 +1,783 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <link rel="stylesheet" href="nisar.css">
+
+
+</head>
+
+<body style="font-family:poppins; ">
+
+
+
+
+    <!-- preloader  -->
+
+
+    <div id="preloader"></div>
+
+
+
+
+    <!-- header -->
+
+
+
+    <nav id="hamburger_top" class="navbar navbar-expand-lg navbar-light "
+        style="position: fixed;backdrop-filter: blur(20px);justify-content: center;z-index: 10;padding-top: 1rem;">
+        <div class="container-fluid" style="width: 100vw;padding: 0 25px;">
+            <img id="nisarlogo" src="nisarlogosvg.svg" alt="">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <img src="hamburger.svg" alt="">
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div style="height: 65vh; text-align: right; padding-top: 17vh;">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                        <li style="padding-right: 1rem;" class="nav-item">
+                            <!-- <a style="color: white;" class="nav-link" href="#">Link</a> -->
+                            <img src="uiw_linkedin.svg" alt="">
+                        </li>
+                        <li style="padding-right: 1rem;" class="nav-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill=white
+                                class="bi bi-behance" viewBox="0 0 16 16">
+                                <path
+                                    d="M4.654 3c.461 0 .887.035 1.278.14.39.07.711.216.996.391.286.176.497.426.641.747.14.32.216.711.216 1.137 0 .496-.106.922-.356 1.242-.215.32-.566.606-.997.817.606.176 1.067.496 1.348.922.281.426.461.957.461 1.563 0 .496-.105.922-.285 1.278a2.317 2.317 0 0 1-.782.887c-.32.215-.711.39-1.137.496a5.329 5.329 0 0 1-1.278.176L0 12.803V3h4.654zm-.285 3.978c.39 0 .71-.105.957-.285.246-.18.355-.497.355-.887 0-.216-.035-.426-.105-.567a.981.981 0 0 0-.32-.355 1.84 1.84 0 0 0-.461-.176c-.176-.035-.356-.035-.567-.035H2.17v2.31c0-.005 2.2-.005 2.2-.005zm.105 4.193c.215 0 .426-.035.606-.07.176-.035.356-.106.496-.216s.25-.215.356-.39c.07-.176.14-.391.14-.641 0-.496-.14-.852-.426-1.102-.285-.215-.676-.32-1.137-.32H2.17v2.734h2.305v.005zm6.858-.035c.286.285.711.426 1.278.426.39 0 .746-.106 1.032-.286.285-.215.46-.426.53-.64h1.74c-.286.851-.712 1.457-1.278 1.848-.566.355-1.243.566-2.06.566a4.135 4.135 0 0 1-1.527-.285 2.827 2.827 0 0 1-1.137-.782 2.851 2.851 0 0 1-.712-1.172c-.175-.461-.25-.957-.25-1.528 0-.531.07-1.032.25-1.493.18-.46.426-.852.747-1.207.32-.32.711-.606 1.137-.782a4.018 4.018 0 0 1 1.493-.285c.606 0 1.137.105 1.598.355.46.25.817.532 1.102.958.285.39.496.851.641 1.348.07.496.105.996.07 1.563h-5.15c0 .58.21 1.11.496 1.396zm2.24-3.732c-.25-.25-.642-.391-1.103-.391-.32 0-.566.07-.781.176-.215.105-.356.25-.496.39a.957.957 0 0 0-.25.497c-.036.175-.07.32-.07.46h3.196c-.07-.526-.25-.882-.497-1.132zm-3.127-3.728h3.978v.957h-3.978v-.957z" />
+                            </svg>
+                        </li>
+                        <li style="padding-right: 1rem;" class="nav-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill=white
+                                class="bi bi-dribbble" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M8 0C3.584 0 0 3.584 0 8s3.584 8 8 8c4.408 0 8-3.584 8-8s-3.592-8-8-8zm5.284 3.688a6.802 6.802 0 0 1 1.545 4.251c-.226-.043-2.482-.503-4.755-.217-.052-.112-.096-.234-.148-.355-.139-.33-.295-.668-.451-.99 2.516-1.023 3.662-2.498 3.81-2.69zM8 1.18c1.735 0 3.323.65 4.53 1.718-.122.174-1.155 1.553-3.584 2.464-1.12-2.056-2.36-3.74-2.551-4A6.95 6.95 0 0 1 8 1.18zm-2.907.642A43.123 43.123 0 0 1 7.627 5.77c-3.193.85-6.013.833-6.317.833a6.865 6.865 0 0 1 3.783-4.78zM1.163 8.01V7.8c.295.01 3.61.053 7.02-.971.199.381.381.772.555 1.162l-.27.078c-3.522 1.137-5.396 4.243-5.553 4.504a6.817 6.817 0 0 1-1.752-4.564zM8 14.837a6.785 6.785 0 0 1-4.19-1.44c.12-.252 1.509-2.924 5.361-4.269.018-.009.026-.009.044-.017a28.246 28.246 0 0 1 1.457 5.18A6.722 6.722 0 0 1 8 14.837zm3.81-1.171c-.07-.417-.435-2.412-1.328-4.868 2.143-.338 4.017.217 4.251.295a6.774 6.774 0 0 1-2.924 4.573z" />
+                            </svg>
+                        </li>
+                        <li style="padding-right: 1rem;" class="nav-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill=white
+                                class="bi bi-instagram" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+                            </svg>
+                        </li>
+                    </ul>
+                </div>
+                <div
+                    style="padding-top: 4vh; height:35vh;border-top: 1px solid rgb(63, 63, 63);color: white;font-size: medium;font-weight: 300;text-align: center;">
+                    <p>muhammednisarpktr@gmail.com</p>
+                    <p>+91 9895 410 700</p>
+                    Location:
+                    <p style="font-size: 14px;">athanikkal, vellur(PO) 676517, malappuram(D), kerala, india</p>
+
+                </div>
+
+
+            </div>
+        </div>
+    </nav>
+
+
+
+    <div class="container-fluid" id="header_fixed"
+        style="height: 10vh; z-index: 1; justify-content: center;align-items: center; position: fixed;backdrop-filter: blur(10px);">
+
+
+        <div class="row " id="header"
+            style=" display: grid;display: flex;justify-content: space-between;background: transparent;width: 90%;">
+
+
+            <div class="col-sm-6" id="list_nav" style="height: 50px;background: transparent; align-items: center;">
+
+
+                <img src="nisarlogosvg.svg" alt="">
+
+            </div>
+            <div class="col-sm-6" id="svg_icon"
+                style="height: 50px;width: 200px;align-items: center;justify-content: space-between;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-linkedin"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill=white class="bi bi-behance"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M4.654 3c.461 0 .887.035 1.278.14.39.07.711.216.996.391.286.176.497.426.641.747.14.32.216.711.216 1.137 0 .496-.106.922-.356 1.242-.215.32-.566.606-.997.817.606.176 1.067.496 1.348.922.281.426.461.957.461 1.563 0 .496-.105.922-.285 1.278a2.317 2.317 0 0 1-.782.887c-.32.215-.711.39-1.137.496a5.329 5.329 0 0 1-1.278.176L0 12.803V3h4.654zm-.285 3.978c.39 0 .71-.105.957-.285.246-.18.355-.497.355-.887 0-.216-.035-.426-.105-.567a.981.981 0 0 0-.32-.355 1.84 1.84 0 0 0-.461-.176c-.176-.035-.356-.035-.567-.035H2.17v2.31c0-.005 2.2-.005 2.2-.005zm.105 4.193c.215 0 .426-.035.606-.07.176-.035.356-.106.496-.216s.25-.215.356-.39c.07-.176.14-.391.14-.641 0-.496-.14-.852-.426-1.102-.285-.215-.676-.32-1.137-.32H2.17v2.734h2.305v.005zm6.858-.035c.286.285.711.426 1.278.426.39 0 .746-.106 1.032-.286.285-.215.46-.426.53-.64h1.74c-.286.851-.712 1.457-1.278 1.848-.566.355-1.243.566-2.06.566a4.135 4.135 0 0 1-1.527-.285 2.827 2.827 0 0 1-1.137-.782 2.851 2.851 0 0 1-.712-1.172c-.175-.461-.25-.957-.25-1.528 0-.531.07-1.032.25-1.493.18-.46.426-.852.747-1.207.32-.32.711-.606 1.137-.782a4.018 4.018 0 0 1 1.493-.285c.606 0 1.137.105 1.598.355.46.25.817.532 1.102.958.285.39.496.851.641 1.348.07.496.105.996.07 1.563h-5.15c0 .58.21 1.11.496 1.396zm2.24-3.732c-.25-.25-.642-.391-1.103-.391-.32 0-.566.07-.781.176-.215.105-.356.25-.496.39a.957.957 0 0 0-.25.497c-.036.175-.07.32-.07.46h3.196c-.07-.526-.25-.882-.497-1.132zm-3.127-3.728h3.978v.957h-3.978v-.957z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill=white class="bi bi-dribbble"
+                    viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M8 0C3.584 0 0 3.584 0 8s3.584 8 8 8c4.408 0 8-3.584 8-8s-3.592-8-8-8zm5.284 3.688a6.802 6.802 0 0 1 1.545 4.251c-.226-.043-2.482-.503-4.755-.217-.052-.112-.096-.234-.148-.355-.139-.33-.295-.668-.451-.99 2.516-1.023 3.662-2.498 3.81-2.69zM8 1.18c1.735 0 3.323.65 4.53 1.718-.122.174-1.155 1.553-3.584 2.464-1.12-2.056-2.36-3.74-2.551-4A6.95 6.95 0 0 1 8 1.18zm-2.907.642A43.123 43.123 0 0 1 7.627 5.77c-3.193.85-6.013.833-6.317.833a6.865 6.865 0 0 1 3.783-4.78zM1.163 8.01V7.8c.295.01 3.61.053 7.02-.971.199.381.381.772.555 1.162l-.27.078c-3.522 1.137-5.396 4.243-5.553 4.504a6.817 6.817 0 0 1-1.752-4.564zM8 14.837a6.785 6.785 0 0 1-4.19-1.44c.12-.252 1.509-2.924 5.361-4.269.018-.009.026-.009.044-.017a28.246 28.246 0 0 1 1.457 5.18A6.722 6.722 0 0 1 8 14.837zm3.81-1.171c-.07-.417-.435-2.412-1.328-4.868 2.143-.338 4.017.217 4.251.295a6.774 6.774 0 0 1-2.924 4.573z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill=white class="bi bi-instagram"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+                </svg>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div>
+
+
+
+
+
+        <!--page 1-->
+
+        <div id="page1" class="container-fluid" style=" z-index: -1; display: flex;justify-content: center;">
+
+
+            <div class="row  " style=" display: flex; ">
+
+                <div class="col">
+
+                    <p id="headline">
+                        Hi i am
+                        <span>
+                            Nisar,
+                            <!-- <img style="height: 10px;" src="underline.svg" alt=""> -->
+                        </span>
+
+                        <br>
+                        UX / UI product designer
+                        with <br> <span style="color: #8F00FF;"> 1 year </span> experience
+                    </p>
+                    <p id="intro">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus cumque doloribus nam
+                        reiciendis qui repudiandae deserunt, praesentium odit quibusdam quos, eligendi ipsam et ratione
+                        quisquam minus <span id="hidden"> , magni voluptate voluptas eos.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores consectetur sunt illum quis
+                            assumenda adipisci dolore aut sapiente ex temporibus. </span></p>
+                    <div id="btn" style="font-weight: 500;text-align: center;">
+                        <button id="btn_resume" class="download-btn" onclick="location.href='nisar_resume.pdf';"
+                            style="color: white;  ">
+                            <img src="download.svg" alt=""> Download my resume
+                        </button>
+                        <button id="btn_project" style="color: white;" type="button"
+                            class="btn btn-primary position-relative">
+                            view projects
+                            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill "
+                                style="background-color: #000000;">
+                                15+
+                                <span class="visually-hidden">unread messages</span>
+                            </span>
+                        </button>
+                    </div>
+
+                </div>
+
+
+
+
+            </div>
+
+        </div>
+
+
+        <div id="page1" class="container-fluid" style=" z-index: -1; display: flex;justify-content: center;">
+
+
+            <div class="row  " id="img_row">
+                <div class="col-sm-6" id="img_div" style="position: relative;">
+
+                    <div id="illucircle"
+                        style="filter: blur(10px);opacity: 0.3; height: 90vw;width: 90vw;background: linear-gradient(to bottom, #AB5D4B, rgba(0, 128, 0, 0)); position: absolute;top: 78%;border-radius: 150px 150px 0 0;">
+                    </div>
+                    <img style="z-index: 4;" id="illustration" src="illustration1.png" alt="">
+
+                </div>
+                <div class="col-sm-6" style="padding-top: 5rem;">
+
+                    <!-- Skills -->
+
+                    <section>
+                        <div id="skilldiv">
+                            <p style="color: #BFBFBF;">
+                                Skills
+                            </p>
+                            <span>
+                                <img id="underline_img" src="underline.svg" alt="">
+                            </span>
+                        </div>
+                        <p id="skill_quote" style="color: white;line-height: 138%;margin-top: 20px;">
+                            When love and skill <br> work together, expect <br> a masterpiece.
+                        </p>
+                        <p style="font-size: 16px;color: rgb(109, 109, 109);font-weight: 400;">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio autem quod repellendus fuga
+                            tenetur. Deserunt a expedita ea veniam, quidem id earum vero architecto obcaecati neque,
+                            cumque
+                            voluptatum porro excepturi. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam
+                            praesentium ducimus odit maiores non excepturi ipsam libero dolorum eveniet, sunt doloribus
+                            labore eaque minus consequatur tempora voluptate iste repudiandae deserunt.
+                        </p>
+                        <div class="row" style=" color: rgb(109, 109, 109);padding: 0;margin: 0;">
+                            <div class="col">
+                                <ul id="list" style="display: flex;padding: 0;flex-direction: row;">
+                                    <li>
+                                        Design thinking
+                                    </li>
+                                    <li>
+                                        Design thinking
+                                    </li>
+                                    <li>
+                                        Design thinking
+                                    </li>
+                                </ul>
+
+                            </div>
+
+                        </div>
+                        <p id="tools" style="color: white;font-weight: 400;">Tools i use</p>
+                        <img id="tools_img" style="width:100%;margin-top: 20px;" src="tools.svg" alt="">
+                        <img id="tools_img1" style="width:100%;margin-top: 20px;padding: 20px 20px;" src="tools1.svg"
+                            alt="">
+                    </section>
+
+                    <!-- Experience -->
+
+                    <section style="margin-top: 200px;">
+                        <div style="line-height: 1px;">
+                            <p style="color: #BFBFBF;" id="skilldiv">
+                                Experience
+                            </p>
+                            <span>
+                                <img id="underline_img" src="underline.svg" alt="">
+                            </span>
+                        </div>
+                        <p id="skill_quote" style="color: white;line-height: 138%;margin-top: 20px;">
+                            Life is the art of <br> drawing without an <br> eraser.
+                        </p>
+                        <p id="expyear" style="margin-bottom: 10px;font-weight: 400;color: white;"> <span
+                                style="color: #8F00FF;">3 year+ experience</span> in design field</p>
+                        <p style="font-size: 16px;color: rgb(109, 109, 109);font-weight: 400;">
+
+                            Lorem ipsum dolor, sit amet consectetur adipisiing elit. Optio autem quod repellendus fuga
+                            tenetur. Deserunt a expedita ea veniam, quidem id earum vero architecto obcaecati neque,
+                            cumque
+                            voluptatum porro excepturi. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam
+                            praesentium ducimus odit maiores non excepturi ipsam libero dolorum eveniet, sunt doloribus
+                            labore eaque minus consequatur tempora voluptate iste repudiandae deserunt.
+                        </p>
+
+                    </section>
+
+                    <section>
+                        <!-- Section: Timeline -->
+                        <section class="py-5" style="color: white;">
+                            <ul class="timeline " id="timeline" style="padding-top: 2rem;">
+                                <li class="timeline-item mb-5">
+                                    <img style="height: 80px;margin-bottom: 20px;"
+                                        src="https://mir-s3-cdn-cf.behance.net/team/138/309485188099.5b9ada28eb2b5.jpg"
+                                        alt="">
+                                    <h5 style="font-size: 20px;font-weight: 400;color: #8F00FF;">UI UX designer</h5>
+                                    <p class=" mb-4 " style="font-size: 12px;color: white;font-weight: 300;">March 2020
+                                        -present</p>
+                                    <p
+                                        style="font-size: 15px ;font-weight: 400;   color: rgb(109, 109, 109);                                    ">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit
+                                        necessitatibus adipisci, ad alias, voluptate pariatur officia
+                                        repellendus repellat inventore fugit perferendis totam dolor
+                                        voluptas et corrupti distinctio maxime corporis optio?
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores quisquam
+                                        provident eos itaque at temporibus sequi. Culpa eius voluptates expedita,
+                                        temporibus illo numquam eligendi necessitatibus, magnam adipisci sapiente
+                                        assumenda minus?
+                                    </p>
+                                </li>
+                                <li class="timeline-item mb-5">
+                                    <img style="height: 80px;margin-bottom: 20px;"
+                                        src="data:image/png;base64,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"
+                                        alt="">
+                                    <h5 style="font-size: 20px;font-weight: 400;color: #8F00FF;">Creative designer</h5>
+                                    <p class=" mb-4 " style="font-size: 12px;color: white;font-weight: 300;">March 2020
+                                        -present</p>
+                                    <p
+                                        style="font-size: 15px ;font-weight: 400;   color: rgb(109, 109, 109);                                    ">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit
+                                        necessitatibus adipisci, ad alias, voluptate pariatur officia
+                                        repellendus repellat inventore fugit perferendis totam dolor
+                                        voluptas et corrupti distinctio maxime corporis optio?
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores quisquam
+                                        provident eos itaque at temporibus sequi. Culpa eius voluptates expedita,
+                                        temporibus illo numquam eligendi necessitatibus, magnam adipisci sapiente
+                                        assumenda minus?
+                                    </p>
+                                </li>
+                                <li class="timeline-item mb-5">
+                                    <img style="height: 60px;margin-bottom: 20px;" src="freelancer.svg" alt="">
+                                    <h5 style="font-size: 20px;font-weight: 400;color: #8F00FF;">Freelancer</h5>
+                                    <p class=" mb-4 " style="font-size: 12px;color: white;font-weight: 300;">March 2020
+                                        -present</p>
+                                    <p
+                                        style="font-size: 15px ;font-weight: 400;   color: rgb(109, 109, 109);                                    ">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit
+                                        necessitatibus adipisci, ad alias, voluptate pariatur officia
+                                        repellendus repellat inventore fugit perferendis totam dolor
+                                        voluptas et corrupti distinctio maxime corporis optio?
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores quisquam
+                                        provident eos itaque at temporibus sequi. Culpa eius voluptates expedita,
+                                        temporibus illo numquam eligendi necessitatibus, magnam adipisci sapiente
+                                        assumenda minus?
+                                    </p>
+                                </li>
+
+
+
+                            </ul>
+                        </section>
+                        <!-- Section: Timeline -->
+                    </section>
+
+                    <!-- education -->
+
+                    <section style="margin-top: 200px;">
+                        <div style="line-height: 1px;">
+                            <p id="skilldiv" style="font-weight: 400;color: #BFBFBF;">
+                                Education
+                            </p>
+                            <span>
+                                <img id="underline_img" src="underline.svg" alt="">
+                            </span>
+                        </div>
+                        <p id="skill_quote" style="color: white;line-height: 138%;margin-top: 20px;">
+                            The great aim of <br> education is not <br> knowledge but action.
+                        </p>
+
+                        <p style="font-size: 16px;color: rgb(109, 109, 109);font-weight: 400;">
+
+
+                            Lorem ipsum dolor, sit amet consectetur adipisiing elit. Optio autem quod repellendus fuga
+                            tenetur. Deserunt a expedita ea veniam, quidem id earum vero architecto obcaecati neque,
+                            cumque
+                            voluptatum porro excepturi. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam
+                            praesentium ducimus odit maiores non excepturi ipsam libero dolorum eveniet, sunt doloribus
+                            labore eaque minus consequatur tempora voluptate iste repudiandae deserunt.
+                        </p>
+
+                    </section>
+                    <section class="py-5" style="color: white;">
+                        <ul class="timeline " style="padding-top: 2rem;">
+                            <li class="timeline-item mb-5">
+
+                                <h5 style="font-size: 20px;font-weight: 500;color: #8F00FF;margin-bottom: 2rem;">MCA
+                                    <br><span style="font-size: medium;font-weight: 400;"> (Master of computer
+                                        application)</span>
+                                </h5>
+                                <h5>
+                                    Calicut university
+                                </h5>
+                                <p class=" mb-4 " style="font-size: 12px;color: white;font-weight: 300;">March 2020
+                                    -present</p>
+                                <p style="font-size: 15px ;font-weight: 400;   color: rgb(109, 109, 109);      ">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit
+                                    necessitatibus adipisci, ad alias, voluptate pariatur officia
+                                    repellendus repellat inventore fugit perferendis totam dolor
+                                    voluptas et corrupti distinctio maxime corporis optio?
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores quisquam
+                                    provident eos itaque at temporibus sequi. Culpa eius voluptates expedita,
+                                    temporibus illo numquam eligendi necessitatibus, magnam adipisci sapiente
+                                    assumenda minus?
+                                </p>
+                            </li>
+                            <li class="timeline-item mb-5">
+
+                                <h5 style="font-size: 20px;font-weight: 500;color: #8F00FF;margin-bottom: 2rem;">MCA
+                                    <br><span style="font-size: medium;font-weight: 400;"> (Master of computer
+                                        application)</span>
+                                </h5>
+                                <h5>
+                                    Calicut university
+                                </h5>
+                                <p class=" mb-4 " style="font-size: 12px;color: white;font-weight: 300;">March 2020
+                                    -present</p>
+                                <p style="font-size: 15px ;font-weight: 400;   color: rgb(109, 109, 109);      ">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit
+                                    necessitatibus adipisci, ad alias, voluptate pariatur officia
+                                    repellendus repellat inventore fugit perferendis totam dolor
+                                    voluptas et corrupti distinctio maxime corporis optio?
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores quisquam
+                                    provident eos itaque at temporibus sequi. Culpa eius voluptates expedita,
+                                    temporibus illo numquam eligendi necessitatibus, magnam adipisci sapiente
+                                    assumenda minus?
+                                </p>
+                            </li>
+                            <li class="timeline-item mb-5">
+
+                                <h5 style="font-size: 20px;font-weight: 500;color: #8F00FF;margin-bottom: 2rem;">MCA
+                                    <br><span style="font-size: medium;font-weight: 400;"> (Master of computer
+                                        application)</span>
+                                </h5>
+                                <h5>
+                                    Calicut university
+                                </h5>
+                                <p class=" mb-4 " style="font-size: 12px;color: white;font-weight: 300;">March 2020
+                                    -present</p>
+                                <p style="font-size: 15px ;font-weight: 400;   color: rgb(109, 109, 109);      ">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit
+                                    necessitatibus adipisci, ad alias, voluptate pariatur officia
+                                    repellendus repellat inventore fugit perferendis totam dolor
+                                    voluptas et corrupti distinctio maxime corporis optio?
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores quisquam
+                                    provident eos itaque at temporibus sequi. Culpa eius voluptates expedita,
+                                    temporibus illo numquam eligendi necessitatibus, magnam adipisci sapiente
+                                    assumenda minus?
+                                </p>
+                            </li>
+
+
+                        </ul>
+                    </section>
+
+
+                </div>
+            </div>
+
+
+
+        </div>
+
+
+        <!-- projects -->
+
+        <div class="container-fluid" style=" z-index: -1; display: flex;justify-content: center;">
+
+
+            <div class="row  " style=" display: flex;text-align: center; ">
+                <div class="col">
+                    <div style="line-height: 1px;">
+                        <p id="skilldiv" style="font-weight: 400;color: #BFBFBF;">
+                            My projects
+                        </p>
+                        <span>
+                            <img id="underline_img" src="underline.svg" alt="">
+                        </span>
+                    </div>
+                    <p id="skill_quote" style="color: white; margin-top: 20px;">
+                        I am not saying <br>
+                        i made great but i can <br>
+                        prove that i made something.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- view button -->
+
+        <div class="container-fluid" style="  display: flex;justify-content: center;">
+
+
+            <div class="row  " style=" display: flex;text-align: center;padding: 0; ">
+                <div class="col">
+                    <button type="button" class="btn  position-relative" id="view"
+                        style="border: none;padding: 14px 50px;color: white;font-size: 16px;font-weight: 400;border-radius: 5px;background-color: #8F00FF;">
+                        View my latest projects
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill "
+                            style="background-color: #000000;">
+                            5+
+                            <span class="visually-hidden">unread messages</span>
+                        </span>
+                    </button>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- cards -->
+
+        <div class="container-fluid" id="project_container"
+            style=" z-index: -1; display: flex;justify-content: center;">
+
+
+            <div class="row  " style=" display: flex;text-align: center;padding: 0;justify-content: space-around; ">
+                <div class="col-sm-4 card"
+                    style="height: 400px;background-color: brown;border-radius: 10px;padding: 0;margin-top: 1rem;
+                background: url(https://www.freemockupworld.com/wp-content/uploads/2022/12/Free-3D-Device-Website-Mockup-01.jpg);background-position: center;background-repeat: no-repeat;background-size:cover ;">
+
+                    <div class="item">
+                        <div class="box" style="border-radius: 10px;">
+                            <div class="cover"
+                                style="display: flex;flex-direction: row; align-items: end;justify-content: space-between;background:linear-gradient( 180deg, rgba(0, 0, 255, 0), rgb(41, 0, 60));">
+                                <div style="text-align: left;width: 250px;padding: 0 0 0 1rem;">
+                                    <h5>Concept App design</h5>
+                                    <p style="color: #bdbdbd; font-size: 12px; font-weight: 300;">Lorem ipsum dolor sit,
+                                        amet consectetur adipisicing elit. Optio accusamus ipsam veritatis laboriosam
+                                        sit laudant</p>
+
+                                </div>
+                                <div >
+                                    <img style=" margin: 0 1rem 1rem 0;" src="full screen icon.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+                <div id="showcase" class="col-sm-4 card"
+                    style="height: 400px;background-color: rgb(75, 215, 11);border-radius: 10px;padding: 0;margin-top: 1rem;
+                    background: url(https://assets.materialup.com/uploads/b3458a3c-9412-4f75-88e2-4000a0819ea6/preview.jpg);background-position: center;background-repeat: no-repeat;background-size:cover ;">
+                    <div class="item">
+                        <div class="box" style="border-radius: 10px;">
+                            <div class="cover"
+                                style="display: flex;flex-direction: row; align-items: end;justify-content: space-between;background:linear-gradient( 180deg, rgba(0, 0, 255, 0), rgb(41, 0, 60));">
+                                <div style="text-align: left;width: 250px;padding: 0 0 0 1rem;">
+                                    <h5>Concept App design</h5>
+                                    <p style="color: #bdbdbd; font-size: 12px; font-weight: 300;">Lorem ipsum dolor sit,
+                                        amet consectetur adipisicing elit. Optio accusamus ipsam veritatis laboriosam
+                                        sit laudant</p>
+
+                                </div>
+
+                                <img style=" margin: 0 1rem 1rem 0;" src="full screen icon.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+                </div>
+                <div id="showcase" class="col-sm-4  card"
+                    style="height: 400px;background-color:#8F00FF;border-radius: 10px;padding: 0;margin-top: 1rem;
+                    background: url(https://www.upwork.com/catalog-images/d12da888d206b165f2772110c9991346);background-position: center;background-repeat: no-repeat;background-size:cover ;">
+                    <div class="item">
+                        <div class="box" style="border-radius: 10px;">
+                            <div class="cover"
+                                style="display: flex;flex-direction: row; align-items: end;justify-content: space-between;background:linear-gradient( 180deg, rgba(0, 0, 255, 0), rgb(41, 0, 60));">
+                                <div style="text-align: left;width: 250px;padding: 0 0 0 1rem;">
+                                    <h5>Concept App design</h5>
+                                    <p style="color: #bdbdbd; font-size: 12px; font-weight: 300;">Lorem ipsum dolor sit,
+                                        amet consectetur adipisicing elit. Optio accusamus ipsam veritatis
+                                        laboriosamipsam ver sit laudant</p>
+
+                                </div>
+
+                                <img style=" margin: 0 1rem 1rem 0;" src="full screen icon.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-sm-4 card"
+                    style="height: 400px;background-color: rgb(239, 211, 2);border-radius: 10px;padding: 0;margin-top: 1rem;
+                    background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpPXhAcX13hJ93g4tR3ro4B4WN3uHyPvHlHA&usqp=CAU);background-position: center;background-repeat: no-repeat;background-size:cover ;">
+                    <div class="item">
+                        <div class="box" style="border-radius: 10px;">
+                            <div class="cover"
+                                style="display: flex;flex-direction: row; align-items: end;justify-content: space-between;background:linear-gradient( 180deg, rgba(0, 0, 255, 0), rgb(41, 0, 60));">
+                                <div style="text-align: left;width: 250px;padding: 0 0 0 1rem;">
+                                    <h5>Concept App design</h5>
+                                    <p style="color: #bdbdbd; font-size: 12px; font-weight: 300;">Lorem ipsum dolor sit,
+                                        amet consectetur adipisicing elit. Optio accusamus ipsam veritatis laboriosam
+                                        sit laudant</p>
+
+                                </div>
+
+                                <img style=" margin: 0 1rem 1rem 0;" src="full screen icon.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div id="showcase" class="col-sm-4 card"
+                    style="height: 400px;background-color: rgb(212, 0, 255);border-radius: 10px;padding: 0;margin-top: 1rem;
+                    background: url(https://d3mqhhis4ljc6x.cloudfront.net/works/acibadem-universitesi/acibadem-vcard-thumb.jpg);background-position: center;background-repeat: no-repeat;background-size:cover ;">
+
+                    <div class="item">
+                        <div class="box" style="border-radius: 10px;">
+                            <div class="cover"
+                                style="display: flex;flex-direction: row; align-items: end;justify-content: space-between;background:linear-gradient( 180deg, rgba(0, 0, 255, 0), rgb(41, 0, 60));">
+                                <div style="text-align: left;width: 250px;padding: 0 0 0 1rem;">
+                                    <h5>Concept App design</h5>
+                                    <p style="color: #bdbdbd; font-size: 12px; font-weight: 300;">Lorem ipsum dolor sit,
+                                        amet consectetur adipisicing elit. Optio accusamus ipsam veritatis laboriosam
+                                        sit laudant</p>
+
+                                </div>
+
+                                <img style=" margin: 0 1rem 1rem 0;" src="full screen icon.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div id="showcase" class="col-sm-4 card"
+                    style="height: 400px;background-color: rgb(255, 0, 111);border-radius: 10px;padding: 0;margin-top: 1rem;
+                    background: url(https://miro.medium.com/v2/resize:fit:0/0*7Q746OynCwdF6-C4.jpg);background-position: center;background-repeat: no-repeat;background-size:cover ;">
+
+                    <div class="item">
+                        <div class="box" style="border-radius: 10px;">
+                            <div class="cover"
+                                style="display: flex;flex-direction: row; align-items: end;justify-content: space-between;background:linear-gradient( 180deg, rgba(0, 0, 255, 0), rgb(41, 0, 60));">
+                                <div style="text-align: left;width: 250px;padding: 0 0 0 1rem;">
+                                    <h5>Concept App design</h5>
+                                    <p style="color: #bdbdbd; font-size: 12px; font-weight: 300;">Lorem ipsum dolor sit,
+                                        amet consectetur adipisicing elit. Optio accusamus ipsam veritatis laboriosam
+                                        sit laudant</p>
+
+                                </div>
+
+                                <img style=" margin: 0 1rem 1rem 0;" src="full screen icon.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                
+
+
+            </div>
+
+        </div>
+       
+
+        <!-- video section -->
+
+        <div class="container-fluid"
+            style="padding: 0; height: 80vh; z-index: -1; display: flex;justify-content: center;align-items: center; margin-top: 15vw;margin-bottom: 0;background-color: #372846;background-size: cover;position: relative;">
+            <img id="journey_img" style="opacity: 0.3;" src="journey.svg" alt="">
+            <img id="journey_img1" style="opacity: 0.3;" src="journey1.svg" alt="">
+            <div class="botón" onclick="this.classList.toggle('active')" style="position: absolute;">
+                <div class="fondo" x="0" y="0" width="200" height="200"></div>
+                <div class="icono" width="200" height="200">
+                    <div class="parte izquierda" x="0" y="0" width="200" height="200" fill="#fff"></div>
+                    <div class="parte derecha" x="0" y="0" width="200" height="200" fill="#fff"></div>
+                </div>
+                <div class="puntero"></div>
+            </div>
+
+
+
+
+
+
+
+        </div>
+
+    </div>
+
+    </div>
+
+    <!-- contact -->
+
+    <div class="container-fluid" id="address"
+        style=" z-index: -1; justify-content: center;margin-bottom: 0;height: 60vh;">
+
+
+        <div class="row  " style=" display: flex;padding-bottom: 4rem; align-items: center; ">
+
+            <div class="col-sm-6 " style="display: flex;justify-content: center;align-items: center;">
+
+                <!-- photo -->
+                <!-- photo -->
+                <!-- photo -->
+                <!-- photo -->
+                <!-- photo -->
+                <!-- photo -->
+                <!-- photo -->
+                <!-- photo -->
+                <!-- photo -->
+                <!-- photo -->
+                <!-- photo -->
+                <!-- photo -->
+                <!-- photo -->
+
+            </div>
+
+            <div class="col-sm-6" style="padding-left: 3rem;">
+                <div>
+                    <ul id="contactimg"
+                        style="list-style: none;line-height: 3.2rem;color: white;font-size: 20px;font-weight: 300;">
+                        <li><img style="margin-right: 1rem;" src="bxl_gmail.svg" alt=""> muhammednisar@gmail.com</li>
+                        <li><img style="margin-right: 1rem;" src="call.svg" alt="">+91 9895 410 700</li>
+                        <li><img style="margin-right: 1rem;" src="location.svg" alt=""> Athanikkal, Malappuram dis,
+                            kerala, India</li>
+                        <li style="margin-top: 2rem; color: #8F00FF;font-weight: 500;"><img style="margin-right: 1rem;"
+                                src="download1.svg" alt=""><u> Download my resume </u></li>
+                    </ul>
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+    <div class="container-fluid"
+        style=" z-index: -1; display: flex;justify-content: center;margin-bottom: 0;background-color: transparent;border-top: 1px solid rgba(64, 0, 69, 0.337); ">
+
+
+        <div class="row  " style=" display: flex; align-items: center;padding: 6rem 6rem;">
+
+            <div class="col" style="display: flex;justify-content: center;align-items: center;">
+                <div style="line-height: 1px;">
+                    <p id="thankyou" style="font-weight: 400;color: #ffffff;">
+                        Thank you
+                    </p>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
+        </script>
+
+
+
+    <script>
+
+        var loader = document.getElementById('preloader');
+        window.addEventListener("load", function () {
+            loader.style.display = "none"
+        })
+
+
+    </script>
+</body>
+
+</html>
