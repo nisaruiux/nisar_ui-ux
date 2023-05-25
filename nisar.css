@@ -1,12 +1,18 @@
 
 
 :root{
-  --main:#00FF00;
-  --mainsub:#007f7f;
+  /* --main:#00ef00; */
+  --main:#00FFFF;
+
+  --mainsub:#00a2d4;
   --text: rgb(109, 109, 109);
   --bw:black;
   --wb:white;
   --bg:#121212;
+  /* --underlinenisar:<svg width="146" height="13" viewBox="0 0 146 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M145.933 4.05979C144.565 1.03654 137.365 0 120.957 0H120.684C107.832 0 89.4191 0.647841 63.8057 1.38206C15.1311 2.76412 0 3.62789 0 7.94683C0.0448837 8.57971 0.290727 9.20579 0.729224 9.80398C2.36994 12.2658 9.47971 13 23.9727 13C34.4551 13 48.8569 12.6113 67.9986 12.2658C121.322 11.2724 145.933 10.2791 145.933 4.96677C146.022 4.66594 146.022 4.36062 145.933 4.05979Z" fill="var(--underlinenisar)"/>
+  </svg>
+  ; */
 }
 
 
@@ -24,6 +30,9 @@
   position: fixed;
   z-index: 100;
 }
+.cover{
+  background:linear-gradient( 180deg, rgba(255, 255, 255, 0), var(--bw) );
+}
 
 
 
@@ -32,7 +41,9 @@
   body {
     background-color: var(--bg);
   }
-
+#nisarunderline{
+  background-size: 10vw;
+}
 
 
   .row {
@@ -45,7 +56,7 @@
     display: flex;
   }
 
-  #list_nav img {
+  #list_nav svg {
     height: 39px;
     width: auto;
   }
@@ -207,6 +218,10 @@
 
 
 @media only screen and (max-width: 576px) {
+  #nisarunderline{
+    background-size: 13vh;
+  }
+  
   #thankyou{
     font-size: 20px;
   }
@@ -278,7 +293,7 @@
   }
   #skill_quote{
     font-size: 25px;
-    font-weight: 400;
+    font-weight: 500;
     margin-bottom: 20px;
   }
 
@@ -288,7 +303,7 @@
     color: var(--wb);
     font-weight: 500;
     text-align: center;
-    line-height:40px ;
+    line-height:45px ;
   }
 
   #header_fixed {
@@ -421,6 +436,9 @@
 #sm_icons svg:hover{
   fill: var(--mainsub);
 }
+#navbarSupportedContent p{
+  font-weight: 500;
+}
 
 }
 
@@ -458,36 +476,8 @@
 
 .item:hover .cover {
   opacity:1;
+  border-bottom: 1px solid var(--main);
 }
-
-.item .name {
-  font-weight:bold;
-  padding-top: 2rem;
-}
-
-.item .title {
-  text-transform:uppercase;
-  font-weight:bold;
-  color:#bbd8fb;
-  letter-spacing:2px;
-  font-size:13px;
-  margin-bottom:20px;
-}
-
-.social {
-  font-size:18px;
-}
- 
-.social a {
-  color:inherit;
-  margin:0 10px;
-  display:inline-block;
-  opacity:0.7;
-}
-.social a:hover {
-  opacity:1;
-}
-
 
 
 
