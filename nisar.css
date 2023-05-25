@@ -91,10 +91,7 @@
     background-color: transparent;
     border: 1px solid var(--main);
   }
-  #btn_project:hover{
-    background-color: #5b00a0;
-  }
-
+  
 
   #header {
     padding-top: 2em;
@@ -334,6 +331,7 @@
     line-height: 20px;
     font-weight: 300;
     color: var(--text);
+    text-align: justify;
   }
   #hidden{
     display: none;
@@ -387,7 +385,7 @@
   }
   #view{
     background-color: var(--main);
-    padding: 14px 20vw;
+    padding: 10px 20vw;
   }
   #view:hover{
     background-color: #5b00a1;
