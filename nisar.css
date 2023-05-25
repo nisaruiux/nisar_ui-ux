@@ -2,7 +2,7 @@
 
 :root{
   --main:#00FFFF;
-  --mainsub:#00b7b7;
+  --mainsub:#007f7f;
   --text: rgb(109, 109, 109);
   --bw:black;
   --wb:white;
@@ -53,7 +53,7 @@
   #headline {
     /* font-size: 59px; */
     font-size: 3.84vw;
-    color: var(--bw);
+    color: var(--wb);
     font-weight: 500;
     text-align: center;
     line-height: 138%;
