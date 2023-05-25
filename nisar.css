@@ -1,9 +1,12 @@
 
 
 :root{
-  --main:#b964ff;
+  --main:#00FFFF;
+  --mainsub:#00b7b7;
   --text: rgb(109, 109, 109);
-  --time:rgb(201, 201, 201);
+  --bw:black;
+  --wb:white;
+  --bg:#121212;
 }
 
 
@@ -27,7 +30,7 @@
 @media only screen and (min-width: 576px) {
 
   body {
-    background: linear-gradient(100deg, rgb(0, 0, 0), #150030);
+    background-color: var(--bg);
   }
 
 
@@ -50,7 +53,7 @@
   #headline {
     /* font-size: 59px; */
     font-size: 3.84vw;
-    color: white;
+    color: var(--bw);
     font-weight: 500;
     text-align: center;
     line-height: 138%;
@@ -69,7 +72,7 @@
   }
 
   #btn_resume:hover{
-    background-color: #5d00a4;
+    background-color:var(--mainsub);
     transition: .2s;
   }
   #view{
@@ -78,7 +81,7 @@
     
   }
   #view:hover{
-    background-color: #5b00a1;
+    background-color: var(--mainsub);
     transition: .2s;
   }
 
@@ -91,7 +94,10 @@
     background-color: transparent;
     border: 1px solid var(--main);
   }
-  
+  #btn_project:hover{
+    background-color: var(--mainsub);
+  }
+
 
   #header {
     padding-top: 2em;
@@ -201,7 +207,6 @@
 
 
 @media only screen and (max-width: 576px) {
-  
   #thankyou{
     font-size: 20px;
   }
@@ -280,7 +285,7 @@
   #headline {
     /* font-size: 59px; */
     font-size:  38px;
-    color: rgb(0, 0, 0);
+    color: var(--wb);
     font-weight: 500;
     text-align: center;
     line-height:40px ;
@@ -292,9 +297,6 @@
 
   #hamburger_top {
     display: flex;
-  }
-  #hamburger_top svg{
-    fill: var(--text);
   }
 
   #nisarlogo {
@@ -333,15 +335,13 @@
     font-size: 15px;
     line-height: 20px;
     font-weight: 300;
-    color: var(--text);
-    text-align: justify;
   }
   #hidden{
     display: none;
   }
 
   body {
-    background: linear-gradient(100deg, rgb(247, 221, 255), #ffffff);
+    background-color: var(--bg);
     padding: 0;
     margin: 0;
     width: 100vw;
@@ -383,7 +383,7 @@
 
   }
   #btn_resume:hover{
-    background-color: #5d00a4;
+    background-color: var(--mainsub);
     transition: .2s;
   }
   #view{
@@ -391,11 +391,11 @@
     padding: 10px 20vw;
   }
   #view:hover{
-    background-color: #5b00a1;
+    background-color: var(--mainsub);
     transition: .2s;
   }
   #btn_project:hover{
-    background-color: #5b00a0;
+    background-color: var(--mainsub);
   }
 
   #btn {
@@ -415,7 +415,12 @@
 
   margin: 4vw;
 }
-
+#sm_icons svg{
+  fill: var(--main);
+}
+#sm_icons svg:hover{
+  fill: var(--mainsub);
+}
 
 }
 
