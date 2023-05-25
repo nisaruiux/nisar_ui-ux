@@ -408,7 +408,10 @@
     display: none;
   }
   
+#sm_icons li{
 
+  margin: 4vw;
+}
 
 
 }
