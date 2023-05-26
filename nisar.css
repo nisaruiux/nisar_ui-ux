@@ -2,7 +2,7 @@
 
 :root{
   /* --main:#00ef00; */
-  --main:#97ffbd;
+  --main:cyan;
 
   --mainsub:#000000;
   --text: rgb(219, 219, 219);
@@ -52,7 +52,7 @@
   .row {
     width: 80%;
     padding-bottom: 2em;
-    padding-top: 8em;
+    padding-top: 11em;
   }
 
   #list_nav {
@@ -124,11 +124,10 @@
 
   #intro {
     color: var(--text);
-    font-weight: 400;
+    font-weight: 300;
     text-align: center;
     font-size: 16px;
     padding: 0 7rem;
-    line-height: 1.5rem;
   }
 
   #contactimg img {
@@ -218,6 +217,7 @@
     color: var(--text);
     font-weight: 300;
     line-height: 25px;
+    text-align: justify;
   }
 
 }
@@ -355,7 +355,6 @@
   #intro {
     text-align: center;
     font-size: 16px;
-    line-height: 25px;
     font-weight: 300;
     color: var(--text);
     padding: 0 1rem;
@@ -363,8 +362,8 @@
   #common_para{
     font-size: 16px;
     color: var(--text);
-    line-height: 25px;
     font-weight: 300;
+    text-align: justify;
   }
   #hidden{
     display: none;
@@ -383,7 +382,7 @@
   .row {
     width: 100%;
     padding-bottom: 2em;
-    padding-top: 7em;
+    padding-top: 4em; 
   }
 
 
