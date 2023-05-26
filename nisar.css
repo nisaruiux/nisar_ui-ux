@@ -2,7 +2,7 @@
 
 :root{
   /* --main:#00ef00; */
-  --main:#00FFFF;
+  --main:#97ffbd;
 
   --mainsub:#000000;
   --text: rgb(219, 219, 219);
@@ -46,7 +46,9 @@
   background-size: 10vw;
 }
 
-
+#nospan{
+  display: none;
+}
   .row {
     width: 80%;
     padding-bottom: 2em;
@@ -228,6 +230,9 @@
 @media only screen and (max-width: 576px) {
   #nisarunderline{
     background-size: 10vh;
+  }
+  #nospan{
+    display: flex;
   }
   
   #thankyou{
