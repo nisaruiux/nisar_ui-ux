@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
     <link rel="stylesheet" href="nisar.css">
-
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 
 </head>
 
@@ -35,7 +35,7 @@
 
 
     <nav id="hamburger_top" class="navbar navbar-expand-lg navbar-light "
-        style="position: fixed;bottom: 0; justify-content: center;z-index: 10;padding-top: 1rem;padding-bottom: 1rem;background-color: var(--navbar);">
+        style="position: fixed;bottom: 0; justify-content: center;z-index: 10;padding-top: 1rem;padding-bottom: 1rem;background-color: var(--navbar);border-top: 1px solid var(--main);">
         <div class="container-fluid" style="width: 100vw;padding: 0 25px;">
             <img src="nisarlogosvg.svg" alt="">
 
@@ -182,7 +182,7 @@
                         <span id="nisarunderline" style=" width: 10vh;height: 11vh;background-image: url(underline.svg);background-repeat: no-repeat;
                         background-position: bottom;">
                             Nisar,
-                            <span></span>
+                            
                             <!-- <img style="height: 10px;" src="underline.svg" alt=""> -->
                         </span>
 
@@ -239,8 +239,11 @@
                     <!-- <div id="illucircle"
                         style="filter: blur(10px);opacity: 0.3; height: 90vw;width: 90vw;background: linear-gradient(to bottom, #AB5D4B, rgba(0, 128, 0, 0)); position: absolute;top: 78%;border-radius: 150px 150px 0 0;">
                     </div> -->
-                    <img style="z-index: 4;" id="illustration" src="illustration1.png" alt="">
+                    <!-- <img style="z-index: 4;" id="illustration" src="illustration1.png" alt=""> -->
+                    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 
+
+                    <lottie-player id="illustration" src="https://lottie.host/7d836a25-886f-434c-bcfa-a3576b6ac9f0/qIHpmEaNxn.json" background="transparent" speed="1"  loop autoplay></lottie-player>
                 </div>
                 <div class="col-sm-6">
 
@@ -559,7 +562,7 @@
             <div class="row  " style=" display: flex;text-align: center;padding: 0; ">
                 <div class="col">
                     <button type="button" class="btn  position-relative" id="view"
-                        style="border: none;color: var(--bw);font-size: 17px;font-weight: 500;border-radius: 5px;">
+                        style="border: none;font-size: 17px;font-weight: 500;border-radius: 5px;">
                         View latest works
                         <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill "
                             style="background-color:var(--main);color: var(--bw)">

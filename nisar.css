@@ -4,7 +4,7 @@
   /* --main:#00ef00; */
   --main:#00FFFF;
 
-  --mainsub:#00e3e3;
+  --mainsub:#000000;
   --text: rgb(219, 219, 219);
   --bw:black;
   --wb:white;
@@ -90,11 +90,13 @@
   #view{
     background-color: var(--main);
     padding: 14px 5vw;
+    color: var(--bw);
     
   }
   #view:hover{
     background-color: var(--mainsub);
     transition: .2s;
+    color: var(--wb);
   }
 
   #btn_project {
@@ -151,8 +153,8 @@
     display: none;
   }
   #illustration{
-    height: 75vh;
-    position: sticky;top: 14vh;margin-left: 1rem;
+    height: 85vh;
+    position: sticky;top: 14vh;
   }
 
   #skill_quote{
@@ -285,7 +287,7 @@
   }
 
   #illustration{
-    height: 50vh;
+    height: 55vh;
 
   }
   #img_div{
@@ -406,16 +408,18 @@
 
   }
   #btn_resume:hover{
-    background-color: var(--mainsub);
+    background-color: var(--bw);
     transition: .2s;
   }
   #view{
     background-color: var(--main);
     padding: 10px 20vw;
+    color: var(--bw);
   }
   #view:hover{
     background-color: var(--mainsub);
     transition: .2s;
+    color: var(--wb);
   }
   #btn_project:hover{
     background-color: var(--mainsub);
