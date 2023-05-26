@@ -4,11 +4,12 @@
   /* --main:#00ef00; */
   --main:#00FFFF;
 
-  --mainsub:#00a2d4;
-  --text: rgb(109, 109, 109);
+  --mainsub:#00e3e3;
+  --text: rgb(219, 219, 219);
   --bw:black;
   --wb:white;
   --bg:#121212;
+  --navbar:#151515;
   /* --underlinenisar:<svg width="146" height="13" viewBox="0 0 146 13" fill="none" xmlns="http://www.w3.org/2000/svg">
   <path d="M145.933 4.05979C144.565 1.03654 137.365 0 120.957 0H120.684C107.832 0 89.4191 0.647841 63.8057 1.38206C15.1311 2.76412 0 3.62789 0 7.94683C0.0448837 8.57971 0.290727 9.20579 0.729224 9.80398C2.36994 12.2658 9.47971 13 23.9727 13C34.4551 13 48.8569 12.6113 67.9986 12.2658C121.322 11.2724 145.933 10.2791 145.933 4.96677C146.022 4.66594 146.022 4.36062 145.933 4.05979Z" fill="var(--underlinenisar)"/>
   </svg>
@@ -118,7 +119,7 @@
 
 
   #intro {
-    color: rgb(109, 109, 109);
+    color: var(--text);
     font-weight: 400;
     text-align: center;
     font-size: 16px;
@@ -207,7 +208,12 @@
   }
   #common_para{
     font-size: 16px;
-    font-weight: 400;
+    font-weight: 300;
+  }
+  #common_para{
+    color: var(--text);
+    font-weight: 300;
+    line-height: 25px;
   }
 
 }
@@ -262,6 +268,7 @@
 
   #tools{
     font-size: 16px;
+    margin-top: 20px;
   }
 
   #underline_img{
@@ -340,15 +347,16 @@
 
   #intro {
     text-align: center;
-    font-size: 15px;
-    line-height: 20px;
+    font-size: 16px;
+    line-height: 25px;
     font-weight: 300;
     color: var(--text);
     padding: 0 1rem;
   }
   #common_para{
-    font-size: 15px;
-    line-height: 20px;
+    font-size: 16px;
+    color: var(--text);
+    line-height: 25px;
     font-weight: 300;
   }
   #hidden{
@@ -476,7 +484,7 @@
 
 .item:hover .cover {
   opacity:1;
-  border-bottom: 1px solid var(--main);
+  border-top: 1px solid var(--main);
 }
 
 
