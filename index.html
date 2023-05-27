@@ -247,7 +247,7 @@
                             class="btn btn-primary position-relative">
                             view projects
                             <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill "
-                                style="background-color: var(--main);color: var(--bg);">
+                                style="background-color: var(--main);color: var(--bg);font-weight: 300;">
                                 15+
                                 <span class="visually-hidden">unread messages</span>
                             </span>
@@ -268,56 +268,33 @@
 
 
             <div class="row  " id="img_row">
-                <div class="col-sm-6" id="img_div" style="position: relative;">
+                <div class="col-sm-5" id="img_div" style="position: relative;">
 
-                  
                     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-
-
                     <lottie-player id="illustration" src="https://lottie.host/7d836a25-886f-434c-bcfa-a3576b6ac9f0/qIHpmEaNxn.json" background="transparent" speed="1"  loop autoplay></lottie-player>
              
-             
                 </div>
-                <div class="col-sm-6">
+                <div class="col-sm-7" style="padding: 0;">
 
                     <!-- Skills -->
 
-                    <section>
-                        <div id="skilldiv">
-                            <p style="color: #BFBFBF;">
+                    <section id="section" >
+                        <div class="position-absolute  " id="skilldiv" >
+                            <p style="color: var(--main);margin: 0;"   >
                                 Skills
                             </p>
-                            <span>
-                                <svg id="underline_img" width="146" height="13" viewBox="0 0 146 13" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M145.933 4.05979C144.565 1.03654 137.365 0 120.957 0H120.684C107.832 0 89.4191 0.647841 63.8057 1.38206C15.1311 2.76412 0 3.62789 0 7.94683C0.0448837 8.57971 0.290727 9.20579 0.729224 9.80398C2.36994 12.2658 9.47971 13 23.9727 13C34.4551 13 48.8569 12.6113 67.9986 12.2658C121.322 11.2724 145.933 10.2791 145.933 4.96677C146.022 4.66594 146.022 4.36062 145.933 4.05979Z"
-                                        fill="var(--main)" />
-                                </svg>
-
-                            </span>
                         </div>
-                        <p id="skill_quote" style="color: var(--wb);line-height: 130%;margin-top: 10px;">
-                            "When love and skill <br> work together, expect <br> a masterpiece."
+                        <p id="skill_quote" style=" font-family: quote;color: var(--wb);margin-top: 35px;">
+                            " When love and skill work <br> together, expect a <br> masterpiece. "
                         </p>
-                        <p id="common_para">
+                        <p  id="common_para" >
                             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio autem quod repellendus fuga
                             tenetur. Deserunt a expedita ea veniam, quidem id earum vero architecto obcaecati neque,
                             cumque
                             voluptatum porro excepturi. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam
                             praesentium ducimus odit maiores non excepturi ipsam libero dolorum eveniet, sunt doloribus
                             labore eaque minus consequatur tempora voluptate iste repudiandae deserunt.
-                        <ul id="common_para">
-                            <li>
-                                Design thinking
-                            </li>
-                            <li>
-                                Design thinking
-                            </li>
-                            <li>
-                                Design thinking
-                            </li>
-                        </ul>
+                      
                         </p>
                         <!-- <div class="row" style=" color: rgb(109, 109, 109);padding: 0;margin: 0;">
                             <div class="col">
@@ -336,29 +313,22 @@
                             </div>
 
                         </div> -->
-                        <p id="tools" style="color: var(--wb);font-weight: 400;">Tools i use</p>
-                        <img id="tools_img" style="width:100%;margin-top: 10px;" src="tools.svg" alt="">
+                        <p id="tools" style="color: var(--wb);">Tools i use</p>
+                        <img id="tools_img" style="width:100%;margin-top: 40px;" src="tools.svg" alt="">
                         <img id="tools_img1" style="width:100%;margin-top: 12px;padding: 20px 20px;" src="tools1.svg"
                             alt="">
                     </section>
 
                     <!-- Experience -->
 
-                    <section style="margin-top: 2rem;">
-                        <div style="line-height: 1px;">
-                            <p style="color: #BFBFBF;" id="skilldiv">
+                    <section id="section">
+                        <div class="position-absolute" id="skilldiv" >
+                            <p style="color: var(--main);margin: 0;"   >
                                 Experience
                             </p>
-                            <span>
-                                <svg id="underline_img" width="146" height="13" viewBox="0 0 146 13" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M145.933 4.05979C144.565 1.03654 137.365 0 120.957 0H120.684C107.832 0 89.4191 0.647841 63.8057 1.38206C15.1311 2.76412 0 3.62789 0 7.94683C0.0448837 8.57971 0.290727 9.20579 0.729224 9.80398C2.36994 12.2658 9.47971 13 23.9727 13C34.4551 13 48.8569 12.6113 67.9986 12.2658C121.322 11.2724 145.933 10.2791 145.933 4.96677C146.022 4.66594 146.022 4.36062 145.933 4.05979Z"
-                                        fill="var(--main)" />
-                                </svg>
-                            </span>
+                           
                         </div>
-                        <p id="skill_quote" style="color: var(--wb);line-height: 130%;margin-top: 20px;">
+                        <p id="skill_quote" style=" font-family: quote;color: var(--wb);margin-top: 35px;">
                             "Life is the art of <br> drawing without an <br> eraser."
                         </p>
                         <p id="expyear" style="margin-bottom: 10px;font-weight: 400;color: var(--wb);"> <span
@@ -373,9 +343,7 @@
                             labore eaque minus consequatur tempora voluptate iste repudiandae deserunt.
                         </p>
 
-                    </section>
-
-                    <section>
+                    
                         <!-- Section: Timeline -->
                         <section class="py-2" style="color: var(--wb);">
                             <ul class="timeline " id="timeline" style="padding-top: 2rem;">
@@ -445,21 +413,14 @@
 
                     <!-- education -->
 
-                    <section style="margin-top: 4rem;">
-                        <div style="line-height: 1px;">
-                            <p id="skilldiv" style="font-weight: 400;color: #BFBFBF;">
+                    <section id="section">
+                        <div class="position-absolute" id="skilldiv" >
+                            <p  style="color: var(--main);margin: 0;">
                                 Education
                             </p>
-                            <span>
-                                <svg id="underline_img" width="146" height="13" viewBox="0 0 146 13" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M145.933 4.05979C144.565 1.03654 137.365 0 120.957 0H120.684C107.832 0 89.4191 0.647841 63.8057 1.38206C15.1311 2.76412 0 3.62789 0 7.94683C0.0448837 8.57971 0.290727 9.20579 0.729224 9.80398C2.36994 12.2658 9.47971 13 23.9727 13C34.4551 13 48.8569 12.6113 67.9986 12.2658C121.322 11.2724 145.933 10.2791 145.933 4.96677C146.022 4.66594 146.022 4.36062 145.933 4.05979Z"
-                                        fill="var(--main)" />
-                                </svg>
-                            </span>
+                        
                         </div>
-                        <p id="skill_quote" style="color: var(--wb);line-height: 130%;margin-top: 20px;">
+                        <p id="skill_quote" style=" font-family: quote;color: var(--wb);margin-top: 35px;">
                             "The great aim of <br> education is not <br> knowledge but action."
                         </p>
 
@@ -474,8 +435,8 @@
                             labore eaque minus consequatur tempora voluptate iste repudiandae deserunt.
                         </p>
 
-                    </section>
-                    <section class="py-2" style="color: white;">
+                    
+                    
                         <ul class="timeline " style="padding-top: 2rem;">
                             <li class="timeline-item mb-5">
 
@@ -483,10 +444,10 @@
                                     <span style="font-size: medium;font-weight: 300;"> (Master of computer
                                         application)</span>
                                 </h5>
-                                <h5>
+                                <h5 style="color: var(--wb);">
                                     Calicut university
                                 </h5>
-                                <p class=" mb-2 " style="font-size: 12px;color: var(--time);font-weight: 300;">March
+                                <p class=" mb-2 " style="font-size: 12px;color: var(--wb);font-weight: 300;">March
                                     2020
                                     -present</p>
                                 <p id="common_para" style=" color: var(--text);      ">
@@ -502,14 +463,14 @@
                             </li>
                             <li class="timeline-item mb-5">
 
-                                <h5 style="font-size: 20px;font-weight: 500;color: var(--main);margin-bottom: 1rem;">Bsc
+                                <h5 style="font-size: 20px;font-weight: 400;color: var(--main);margin-bottom: 1rem;">Bsc
                                     Computer science
 
                                 </h5>
-                                <h5>
+                                <h5 style="color: var(--wb);">
                                     Calicut university
                                 </h5>
-                                <p class=" mb-2 " style="font-size: 12px;color:var(--time);font-weight: 300;">March 2020
+                                <p class=" mb-2 " style="font-size: 12px;color:var(--wb);font-weight: 300;">March 2020
                                     -present</p>
                                 <p id="common_para" style="color:var(--text);">
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit
@@ -528,10 +489,10 @@
                                     Science
 
                                 </h5>
-                                <h5>
+                                <h5 style="color: var(--wb);">
                                     Kerala state syllabus
                                 </h5>
-                                <p class=" mb-2 " style="font-size: 12px;color: var(--time);font-weight: 300;">March
+                                <p class=" mb-2 " style="font-size: 12px;color: var(--wb);font-weight: 300;">March
                                     2020
                                     -present</p>
                                 <p id="common_para" style=" color: var(--text);      ">
@@ -567,7 +528,7 @@
             <div class="row  " style=" display: flex;text-align: center; ">
                 <div class="col">
                     <div style="line-height: 1px;">
-                        <p id="skilldiv" style="font-weight: 400;color: #BFBFBF;">
+                        <p style="font-weight: 400;color: #BFBFBF;">
                             Portfolio
                         </p>
                         <span>

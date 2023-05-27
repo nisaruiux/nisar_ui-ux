@@ -3,8 +3,18 @@
   font-family: "quote";
   src: url(ReenieBeanie-Regular.ttf);
 }
-
-
+@font-face {
+  font-family: "poppins_medium";
+  src: url(Poppins-Medium.ttf);
+}
+@font-face {
+  font-family: "poppins_regular";
+  src: url(Poppins-Regular.ttf);
+}
+@font-face {
+  font-family: "poppins_light";
+  src: url(Poppins-Light.ttf);
+}
 
 :root{
   /* --main:#00ef00; */
@@ -48,7 +58,9 @@
     width: 183px;
     height: 183px;
   }
-
+  #section{
+    border: 1px solid var(--main);border-radius: 10px;padding: 66px;position: relative;margin-top: 4rem;
+  }
 
   /* #sm_icons{
     text-align: center;
@@ -182,21 +194,25 @@
     display: none;
   }
   #illustration{
-    height: 85vh;
+    height: 70vh;
     position: sticky;top: 14vh;
   }
 
   #skill_quote{
-    font-size: 48px;
-    font-weight: 500;
+    font-size: 53px;
     margin-bottom: 40px;
+    line-height: 55px;
   }
   #skilldiv p{
-    font-size: 20px;font-weight: 400;
+    font-size: 20px;font-weight:300;
 
   }
   #skilldiv{
-    line-height: 1px;
+    width: 100%;
+    height: 63px;
+    border-bottom: 1px solid var(--main);border-radius: 10px 10px 0 0;display: flex;justify-content: center;align-items: center;
+    top: 0;
+    right: 0;
   }
   #underline_img{
 
@@ -237,15 +253,12 @@
   .card{
     width: 350px;
   }
+  
   #common_para{
+    color: var(--mainsub);
+    line-height: 180%;
     font-size: 16px;
-    font-weight: 300;
-  }
-  #common_para{
-    color: var(--text);
-    font-weight: 300;
-    line-height: 25px;
-    text-align: justify;
+    font-family: poppins_light;
   }
   #page1{
     height: 100vh;
@@ -262,6 +275,12 @@
 
 
 @media only screen and (max-width: 576px) {
+
+
+  #section{
+    border: 1px solid var(--main);border-radius: 10px;padding: 26px;position: relative;margin-top: 4rem;
+  }
+
   #smile{
     font-size: 20px;
   }
@@ -331,7 +350,11 @@
 
   
   #skilldiv{
-    line-height: 0;
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid var(--main);border-radius: 10px 10px 0 0;display: flex;justify-content: center;align-items: center;
+    top: 0;
+    right: 0;
   }
   #illucircle{
     display: flex;
@@ -352,9 +375,11 @@
     
   }
   #skill_quote{
-    font-size: 25px;
+    font-size: 36px;
     font-weight: 500;
     margin-bottom: 20px;
+    line-height: 45px;
+
   }
 
   #headline {
@@ -406,10 +431,10 @@
     margin: 0;
   }
   #common_para{
-    font-size: 16px;
-    color: var(--text);
-    font-weight: 300;
-    text-align: justify;
+    font-size: 13px;
+    color: var(--mainsub);
+    font-weight: lighter;
+    font-family: poppins_light;
   }
   #hidden{
     display: none;
@@ -552,7 +577,7 @@
 
 
 .timeline {
-  border-left: 1px solid hsl(0, 0%, 22%);
+  border-left: 1px solid rgb(8, 31, 102);
   position: relative;
   list-style: none;
 }
