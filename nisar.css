@@ -1,14 +1,20 @@
 
+@font-face {
+  font-family: "quote";
+  src: url(ReenieBeanie-Regular.ttf);
+}
+
+
 
 :root{
   /* --main:#00ef00; */
   --main:cyan;
 
-  --mainsub:#000000;
+  --mainsub:#ffffff;
   --text: rgb(219, 219, 219);
   --bw:black;
   --wb:white;
-  --bg:#121212;
+  --bg:#00468B;
   --navbar:#111111;
   /* --underlinenisar:<svg width="146" height="13" viewBox="0 0 146 13" fill="none" xmlns="http://www.w3.org/2000/svg">
   <path d="M145.933 4.05979C144.565 1.03654 137.365 0 120.957 0H120.684C107.832 0 89.4191 0.647841 63.8057 1.38206C15.1311 2.76412 0 3.62789 0 7.94683C0.0448837 8.57971 0.290727 9.20579 0.729224 9.80398C2.36994 12.2658 9.47971 13 23.9727 13C34.4551 13 48.8569 12.6113 67.9986 12.2658C121.322 11.2724 145.933 10.2791 145.933 4.96677C146.022 4.66594 146.022 4.36062 145.933 4.05979Z" fill="var(--underlinenisar)"/>
@@ -38,7 +44,29 @@
 
 
 @media only screen and (min-width: 576px) {
+  #page1 img{
+    width: 183px;
+    height: 183px;
+  }
 
+
+  /* #sm_icons{
+    text-align: center;
+  } */
+  #sm_icons{
+    margin-top: 2rem;
+    text-align: center;
+    display: flex;
+
+
+  }
+  #sm_icons li{
+    margin-right: 2rem;
+    fill: var(--mainsub);
+  }
+  #nisarunderline{
+    color: var(--main);
+  }
   body {
     background-color: var(--bg);
   }
@@ -52,7 +80,7 @@
   .row {
     width: 80%;
     padding-bottom: 2em;
-    padding-top: 11em;
+    padding-top: 0;
   }
 
   #list_nav {
@@ -66,20 +94,23 @@
 
   #headline {
     /* font-size: 59px; */
-    font-size: 3.84vw;
+    font-size: 38px;
     color: var(--wb);
-    font-weight: 500;
-    text-align: center;
-    line-height: 138%;
+    font-weight: 300;
+    text-align: left;
+    line-height: auto;
+  }
+  #btn{
+    text-align: left; 
   }
 
   #btn_resume {
     margin-top: 5vw;
-    padding: 14px 50px;
-    font-size: 18px;
-    font-weight: 400;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 300;
     border-radius: 5px;
-    background-color: var(--main);
+    background: linear-gradient(90deg, #0096FD, #05E8AE);
     border: none;
 
 
@@ -102,17 +133,15 @@
   }
 
   #btn_project {
-    padding: 14px 40px;
-    font-size: 18px;
-    font-weight: 400;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 300;
     margin-left: 20px;
     border-radius: 5px;
     background-color: transparent;
     border: 1px solid var(--main);
   }
-  #btn_project:hover{
-    background-color: var(--mainsub);
-  }
+  
 
 
   #header {
@@ -124,10 +153,9 @@
 
   #intro {
     color: var(--text);
-    font-weight: 300;
-    text-align: center;
+    font-weight:300;
+    text-align: left;
     font-size: 16px;
-    padding: 0 7rem;
   }
 
   #contactimg img {
@@ -219,7 +247,13 @@
     line-height: 25px;
     text-align: justify;
   }
-
+  #page1{
+    height: 100vh;
+  }
+  #smile{
+    font-size: 24px;
+    margin-top: 2rem;
+  }
 }
 
 /* ------------------------------------------------------------------------------------------- */
@@ -228,13 +262,25 @@
 
 
 @media only screen and (max-width: 576px) {
+  #smile{
+    font-size: 20px;
+  }
+  #btn{
+    padding-top: 1rem;
+  }
+  #page1 img{
+    width: 96px;height: 96px;
+  }
+  
   #nisarunderline{
-    background-size: 10vh;
+    color: var(--main);
   }
   #nospan{
     display: flex;
   }
-  
+  #product{
+    display: none;
+  }
   #thankyou{
     font-size: 20px;
   }
@@ -313,11 +359,11 @@
 
   #headline {
     /* font-size: 59px; */
-    font-size:  38px;
+    font-size:  28px;
     color: var(--wb);
-    font-weight: 500;
+    font-weight:normal;
     text-align: center;
-    line-height:45px ;
+    line-height:auto ;
   }
 
   #header_fixed {
@@ -354,10 +400,10 @@
 
   #intro {
     text-align: center;
-    font-size: 16px;
-    font-weight: 300;
+    font-size: 10px;
+    font-weight: 200;
     color: var(--text);
-    padding: 0 1rem;
+    margin: 0;
   }
   #common_para{
     font-size: 16px;
@@ -388,11 +434,12 @@
 
 
   #btn_resume {
-    background-color: var(--main);
+    /* background-color: var(--main); */
+    background: linear-gradient(90deg, #0096FD, #05E8AE);
     border: none;
     margin-top: 4vw;
-    font-size: 17px;
-    width: 90%;
+    font-size: 15px;
+    width: 70%;
     padding: 10px 20px;
     border-radius: 5px;
 
@@ -402,9 +449,9 @@
   #btn_project {
     background-color: transparent;
     border: 1px solid var(--main);
-    font-size: 17px;
+    font-size: 15px;
     margin-top: 1em;
-    width: 70%;
+    width: 50%;
     font-weight: 400;
     padding: 10px 20px;
     border-radius: 5px;
@@ -431,7 +478,7 @@
 
   #btn {
     text-align: center;
-    font-size: 16px;
+    font-size: 15px;
   }
 
   #header {
@@ -441,19 +488,25 @@
   #svg_icon {
     display: none;
   }
-  
+  #sm_icons{
+    margin-top: 2rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 #sm_icons li{
 
   margin: 4vw;
 }
 #sm_icons svg{
-  fill: var(--main);
-}
-#sm_icons svg:hover{
   fill: var(--mainsub);
 }
+/* #sm_icons svg:hover{
+  fill: var(--main);
+} */
 #navbarSupportedContent p{
-  font-weight: 500;
+  font-weight: 300;
 }
 
 }
