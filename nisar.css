@@ -53,6 +53,10 @@
     border: 1px solid var(--main);border-radius: 10px;padding: 66px;position: relative;margin-top: 4rem;
   }
 
+  #section1{
+    border-radius: 10px;position: relative;
+  }
+
   /* #sm_icons{
     text-align: center;
   } */
@@ -185,7 +189,8 @@
     display: none;
   }
   #illustration{
-    height: 70vh;
+    height:auto;
+    width:100%;
     position: sticky;top: 14vh;
   }
 
@@ -202,6 +207,13 @@
     width: 100%;
     height: 63px;
     border-bottom: 1px solid var(--main);border-radius: 10px 10px 0 0;display: flex;justify-content: center;align-items: center;
+    top: 0;
+    right: 0;
+  }
+  #skilldiv1{
+    width: 100%;
+    height: 63px;
+    /* border-bottom: 1px solid var(--main);border-radius: 10px 10px 0 0;display: flex;justify-content: center;align-items: center; */
     top: 0;
     right: 0;
   }
@@ -223,7 +235,7 @@
     font-size: 20px;
   }
   #project_container{
-    margin-top: 1rem;
+    margin-top: 30rem;
   }
  
   #journey_img{
@@ -280,6 +292,9 @@
 
 
   #section{
+    border: 1px solid var(--main);border-radius: 10px;padding: 26px;position: relative;margin-top: 15px;
+  }
+  #section1{
     border: 1px solid var(--main);border-radius: 10px;padding: 26px;position: relative;margin-top: 15px;
   }
   
@@ -355,6 +370,13 @@
 
   
   #skilldiv{
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid var(--main);border-radius: 10px 10px 0 0;display: flex;justify-content: center;align-items: center;
+    top: 0;
+    right: 0;
+  }
+  #skilldiv1{
     width: 100%;
     height: 50px;
     border-bottom: 1px solid var(--main);border-radius: 10px 10px 0 0;display: flex;justify-content: center;align-items: center;
