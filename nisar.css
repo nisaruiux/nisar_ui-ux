@@ -32,13 +32,6 @@
   ; */
 }
 
-
-
-
-
-
-
-
 #preloader{
   background: #ffffff url(Circles-menu-3.gif) no-repeat center center;
   background-size: 8vh;
@@ -47,9 +40,7 @@
   position: fixed;
   z-index: 100;
 }
-.cover{
-  background:linear-gradient( 180deg, rgba(255, 255, 255, 0), var(--bw) );
-}
+
 
 
 
@@ -252,6 +243,8 @@
   }
   .card{
     width: 350px;
+    height: 25vw;
+
   }
   
   #common_para{
@@ -267,6 +260,15 @@
     font-size: 24px;
     margin-top: 2rem;
   }
+  .item .box {
+    text-align:center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+    height: 25vw;
+    position:relative;
+    overflow:hidden;
+  }
 }
 
 /* ------------------------------------------------------------------------------------------- */
@@ -278,8 +280,9 @@
 
 
   #section{
-    border: 1px solid var(--main);border-radius: 10px;padding: 26px;position: relative;margin-top: 4rem;
+    border: 1px solid var(--main);border-radius: 10px;padding: 26px;position: relative;margin-top: 15px;
   }
+  
 
   #smile{
     font-size: 20px;
@@ -304,7 +307,8 @@
     font-size: 20px;
   }
   .card{
-    width: 100vw;
+    width: 100%;
+    height: 40vh;
   }
   #address{
     display: none;
@@ -324,6 +328,7 @@
 
   #project_container{
     margin-top: 0rem;
+    padding: 0;
   }
 
 
@@ -361,7 +366,8 @@
   }
 
   #illustration{
-    height: 55vh;
+    height: 45vh;
+   
 
   }
   #img_div{
@@ -369,6 +375,7 @@
     padding: 0;
     margin: 0;
     width: 100vw;
+    /* position: sticky;top: 2vh; */
   }
   #img_row{
     padding-top: 2rem;
@@ -533,25 +540,25 @@
 #navbarSupportedContent p{
   font-weight: 300;
 }
-
-}
-
-
-
-
-
-
-
-
 .item .box {
   text-align:center;
   background-repeat:no-repeat;
   background-size:cover;
   background-position:center;
-  height:400px;
+  height: 40vh;
   position:relative;
   overflow:hidden;
 }
+
+}
+
+
+
+
+
+
+
+
 
 .item .cover {
   position:absolute;
@@ -562,20 +569,8 @@
   width:100%;
   height:100%;
   /* backdrop-filter: blur(1px); */
-  transition:opacity 0.15s ease-in;
-  opacity:0;
   color:#fff;
-  text-shadow:1px 1px 1px rgba(0,0,0,0.15);
 }
-
-.item:hover .cover {
-  opacity:1;
-  border-top: 1px solid var(--main);
-}
-
-
-
-
 .timeline {
   border-left: 1px solid rgb(8, 31, 102);
   position: relative;
