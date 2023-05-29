@@ -40,8 +40,6 @@
     <nav id="hamburger_top" class="navbar navbar-expand-lg navbar-light "
         style="position: fixed;bottom: 0; justify-content: center;z-index: 10;padding-top: 1rem;padding-bottom: 1rem;background-color: var(--bg);">
         <div class="container-fluid" style="width: 100vw;padding: 0 25px;">
-           
-
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -49,6 +47,13 @@
                <img src="hamburger.svg" alt="">
 
             </button>
+            
+         
+           <p style="margin: 0;color: var(--wb);"><a href="#skill">skills</a></p>
+           <p style="margin: 0;color: var(--wb);"><a href="#experience">experience</a></p>
+           <p style="margin: 0;color: var(--wb);"><a href="#education">education</a></p>
+
+     
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <div style="padding-top: 4vh; color: var(--wb);font-weight: 300;text-align: center;">
                     <p style="font-size: 17px;color: var(--main);"><b> Get in touch</b></p>
@@ -245,7 +250,7 @@
                         </button>
                         <button id="btn_project" style="color: var(--main)" type="button"
                             class="btn btn-primary position-relative">
-                            view projects
+                            <a style="text-decoration: none;color: var(--wb);" href="#port">view portfolio</a>
                             <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill "
                                 style="background-color: var(--main);color: var(--bg);font-weight: 300;">
                                 15+
@@ -282,7 +287,7 @@
 
                     <section id="section" >
                         <div class="position-absolute  " id="skilldiv" >
-                            <p style="color: var(--main);margin: 0;"   >
+                            <p id="skill" style="color: var(--main);margin: 0;"   >
                                 Skills
                             </p>
                         </div>
@@ -325,7 +330,7 @@
 
                     <section id="section">
                         <div class="position-absolute" id="skilldiv" >
-                            <p style="color: var(--main);margin: 0;"   >
+                            <p id="experience" style="color: var(--main);margin: 0;"   >
                                 Experience
                             </p>
                            
@@ -417,7 +422,7 @@
 
                     <section id="section">
                         <div class="position-absolute" id="skilldiv" >
-                            <p  style="color: var(--main);margin: 0;">
+                            <p id="education"  style="color: var(--main);margin: 0;">
                                 Education
                             </p>
                         
@@ -522,7 +527,7 @@
         <div class="container-fluid position-relative" id="skilldiv1" style="margin: 0;padding: 0; width: 100%; display: flex;justify-content: center;">
 
             <div style="display: flex;justify-content: center;color: var(--main);align-items: center;position: absolute;margin: 0;padding: 0;">
-                <p style="font-weight: 400;margin: 0;">
+                <p id="port" style="font-weight: 400;margin: 0;">
                     Portfolio
                 </p>
                 <!-- <img src="google_logo.svg" alt=""> -->
