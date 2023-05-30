@@ -45,10 +45,10 @@
 
 
 @media only screen and (min-width: 576px) {
-  #page1 img{
-    width: 183px;
-    height: 183px;
+  #port{
+    display: none;
   }
+ 
   #section{
     border: 1px solid var(--main);border-radius: 10px;padding: 66px;position: relative;margin-top: 4rem;
   }
@@ -85,7 +85,7 @@
   display: none;
 }
   .row {
-    width: 80%;
+    width: 90%;
     padding-bottom: 2em;
     padding-top: 0;
   }
@@ -258,6 +258,13 @@
     height: 25vw;
 
   }
+  #photo{
+    width: 183px;
+    height: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+ 
   
   #common_para{
     color: var(--mainsub);
@@ -271,6 +278,7 @@
   #smile{
     font-size: 24px;
     margin-top: 2rem;
+    display: none;
   }
   .item .box {
     text-align:center;
@@ -281,6 +289,7 @@
     position:relative;
     overflow:hidden;
   }
+ 
 }
 
 /* ------------------------------------------------------------------------------------------- */
@@ -298,7 +307,9 @@
     border: 1px solid var(--main);border-radius: 10px;padding: 26px;position: relative;margin-top: 15px;
   }
   
-
+  #photodiv{
+    align-items: center;
+  }
   #smile{
     font-size: 20px;
   }
@@ -400,7 +411,8 @@
     /* position: sticky;top: 2vh; */
   }
   #img_row{
-    padding-top: 2rem;
+    /* padding-top: 2rem; */
+    display: flex;justify-content: center;align-items: center;
     
   }
   #skill_quote{
@@ -526,9 +538,7 @@
     transition: .2s;
     color: var(--wb);
   }
-  #btn_project:hover{
-    background-color: var(--mainsub);
-  }
+  
 
   #btn {
     text-align: center;
