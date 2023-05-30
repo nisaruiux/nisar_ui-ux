@@ -111,7 +111,7 @@
   #headline {
     /* font-size: 59px; */
     font-size: 40px;
-    color: var(--wb);
+    color: var(--main);
     font-weight: 300;
     text-align: left;
     line-height: auto;
@@ -136,7 +136,7 @@
     background-color:var(--mainsub);
     transition: .2s;
   }
-  #view{
+  /* #view{
     background-color: var(--main);
     padding: 14px 5vw;
     color: var(--bw);
@@ -146,13 +146,13 @@
     background-color: var(--mainsub);
     transition: .2s;
     color: var(--wb);
-  }
+  } */
 
   #btn_project {
     padding: 10px 20px;
     font-size: 16px;
     font-weight: 300;
-    margin-left: 20px;
+    margin-left: 10px;
     border-radius: 5px;
     background-color: transparent;
     border: 1px solid var(--main);
@@ -435,8 +435,8 @@
   #headline {
     /* font-size: 59px; */
     font-size:  30px;
-    color: var(--wb);
-    font-weight:bold;
+    color: var(--btn2);
+    font-weight:normal;
     text-align: center;
     line-height:auto ;
   }
