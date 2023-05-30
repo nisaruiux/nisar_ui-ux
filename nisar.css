@@ -16,21 +16,30 @@
   src: url(Poppins-Light.ttf);
 }
 
-:root{
-  /* --main:#00ef00; */
+/* :root{
   --main:cyan;
-
   --mainsub:#ffffff;
   --text: rgb(219, 219, 219);
   --bw:black;
   --wb:white;
   --bg:#00468B;
   --navbar:#111111;
-  /* --underlinenisar:<svg width="146" height="13" viewBox="0 0 146 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <path d="M145.933 4.05979C144.565 1.03654 137.365 0 120.957 0H120.684C107.832 0 89.4191 0.647841 63.8057 1.38206C15.1311 2.76412 0 3.62789 0 7.94683C0.0448837 8.57971 0.290727 9.20579 0.729224 9.80398C2.36994 12.2658 9.47971 13 23.9727 13C34.4551 13 48.8569 12.6113 67.9986 12.2658C121.322 11.2724 145.933 10.2791 145.933 4.96677C146.022 4.66594 146.022 4.36062 145.933 4.05979Z" fill="var(--underlinenisar)"/>
-  </svg>
-  ; */
+} */
+:root{
+  --main:#1F224D;
+  --mainsub:#5a5a5a;
+  --text: rgb(68, 68, 68);
+  --bw:black;
+  --wb:rgb(32, 32, 32);
+  --bg:#F2F5FE;
+  --navbar:#111111;
+  --cardwhite:rgb(249, 249, 249);
+  --btn1:#1F224D;
+  --btn2:#7359D8;
+  --cardcontet:#F2F5FE;
 }
+
+
 
 #preloader{
   background: #ffffff url(Circles-menu-3.gif) no-repeat center center;
@@ -101,7 +110,7 @@
 
   #headline {
     /* font-size: 59px; */
-    font-size: 38px;
+    font-size: 40px;
     color: var(--wb);
     font-weight: 300;
     text-align: left;
@@ -117,7 +126,7 @@
     font-size: 16px;
     font-weight: 300;
     border-radius: 5px;
-    background: linear-gradient(90deg, #0096FD, #05E8AE);
+    background: linear-gradient(90deg, var(--btn1),var(--btn2));
     border: none;
 
 
@@ -425,9 +434,9 @@
 
   #headline {
     /* font-size: 59px; */
-    font-size:  28px;
+    font-size:  30px;
     color: var(--wb);
-    font-weight:normal;
+    font-weight:bold;
     text-align: center;
     line-height:auto ;
   }
@@ -501,7 +510,7 @@
 
   #btn_resume {
     /* background-color: var(--main); */
-    background: linear-gradient(90deg, #0096FD, #05E8AE);
+    background: linear-gradient(90deg, var(--btn1),var(--btn2));
     border: none;
     margin-top: 4vw;
     font-size: 15px;
@@ -604,7 +613,7 @@
   color:#fff;
 }
 .timeline {
-  border-left: 1px solid rgb(8, 31, 102);
+  border-left: 1px solid var(--btn2);
   position: relative;
   list-style: none;
 }
